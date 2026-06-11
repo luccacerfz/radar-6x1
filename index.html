@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Radar 6x1 — Monitor da PEC da Jornada de Trabalho no Senado</title>
+  <meta name="description" content="Painel de monitoramento da proposta de fim da escala 6x1 em tramitação no Senado Federal: índice de calor da discussão, mapa de votos senador a senador, debates sobre o texto e reação do setor empresarial.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Archivo:ital,wght@0,400..900;1,400..900&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='80' font-size='80'>🔥</text></svg>">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ===== MASTHEAD ===== -->
+  <header class="masthead">
+    <div class="masthead-top">
+      <span class="masthead-kicker">Monitor legislativo independente</span>
+      <span class="masthead-date" id="masthead-date"></span>
+    </div>
+    <h1 class="masthead-title">Radar <span class="title-x">6</span><span class="title-times">×</span><span class="title-x">1</span></h1>
+    <p class="masthead-sub">O fim da escala 6×1 em tramitação no Senado Federal — calor da discussão, mapa de votos e o que dizem trabalhadores, senadores e empresas</p>
+    <nav class="masthead-nav">
+      <a href="#indice">Índice de calor</a>
+      <a href="#senadores">Mapa de votos</a>
+      <a href="#debates">Debates no Senado</a>
+      <a href="#noticias">Painel de notícias</a>
+      <a href="#mercados">Mercados &amp; pesquisas</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===== FICHA DA PROPOSTA ===== -->
+    <section class="ficha-strip" id="ficha"></section>
+
+    <!-- ===== ÍNDICE DE CALOR ===== -->
+    <section class="section section-indice" id="indice">
+      <div class="section-head">
+        <span class="section-num">01</span>
+        <h2>Índice de calor da discussão</h2>
+        <p class="section-desc">Termômetro composto de 0 a 100 que combina o volume de cobertura na imprensa, a favorabilidade da população e a inclinação do Senado em aprovar a proposta.</p>
+      </div>
+      <div class="indice-grid">
+        <div class="gauge-card">
+          <div class="gauge-wrap">
+            <svg viewBox="0 0 200 120" class="gauge-svg" aria-hidden="true">
+              <defs>
+                <linearGradient id="heat-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#2456a6"/>
+                  <stop offset="45%" stop-color="#e2a23b"/>
+                  <stop offset="100%" stop-color="#c8311b"/>
+                </linearGradient>
+              </defs>
+              <path d="M 20 110 A 80 80 0 0 1 180 110" fill="none" stroke="#e8e0d0" stroke-width="14" stroke-linecap="round"/>
+              <path id="gauge-arc" d="M 20 110 A 80 80 0 0 1 180 110" fill="none" stroke="url(#heat-grad)" stroke-width="14" stroke-linecap="round" stroke-dasharray="251.3" stroke-dashoffset="251.3"/>
+              <g id="gauge-needle" transform="rotate(-90 100 110)">
+                <line x1="100" y1="110" x2="100" y2="42" stroke="#16130c" stroke-width="3" stroke-linecap="round"/>
+                <circle cx="100" cy="110" r="6" fill="#16130c"/>
+              </g>
+            </svg>
+            <div class="gauge-reading">
+              <span class="gauge-value" id="gauge-value">—</span>
+              <span class="gauge-label" id="gauge-label">calculando…</span>
+            </div>
+          </div>
+          <p class="gauge-note" id="gauge-note"></p>
+        </div>
+        <div class="componentes" id="componentes"></div>
+      </div>
+      <details class="metodologia">
+        <summary>Metodologia do índice</summary>
+        <p id="metodologia-texto"></p>
+      </details>
+    </section>
+
+    <!-- ===== MAPA DE VOTOS ===== -->
+    <section class="section section-senadores" id="senadores">
+      <div class="section-head">
+        <span class="section-num">02</span>
+        <h2>Mapa de votos: senador a senador</h2>
+        <p class="section-desc">Propensão de voto dos 81 senadores na PEC, classificada a partir de declarações públicas, assinaturas e, na ausência delas, da orientação predominante do partido. Uma PEC precisa de <strong>49 votos</strong> em dois turnos.</p>
+      </div>
+      <div class="placar" id="placar"></div>
+      <div class="tabela-controles">
+        <input type="search" id="busca-senador" placeholder="Buscar senador, partido ou estado…" aria-label="Buscar senador">
+        <div class="filtros" id="filtros-propensao"></div>
+      </div>
+      <div class="tabela-wrap">
+        <table class="tabela-senadores">
+          <thead>
+            <tr>
+              <th data-sort="nome">Senador(a)</th>
+              <th data-sort="partido">Partido</th>
+              <th data-sort="uf">UF</th>
+              <th data-sort="propensao">Propensão de voto</th>
+              <th>Viés do senador</th>
+              <th>Base</th>
+            </tr>
+          </thead>
+          <tbody id="tabela-corpo"></tbody>
+        </table>
+      </div>
+      <p class="tabela-rodape" id="tabela-rodape"></p>
+    </section>
+
+    <!-- ===== DEBATES NO SENADO ===== -->
+    <section class="section section-debates" id="debates">
+      <div class="section-head">
+        <span class="section-num">03</span>
+        <h2>O que os senadores querem mudar no texto</h2>
+        <p class="section-desc">Sumário das discussões em curso sobre alterações na proposta — em até 250 palavras.</p>
+      </div>
+      <div class="debates-grid">
+        <article class="sumario-card" id="sumario-senado"></article>
+        <aside class="debates-temas" id="debates-temas"></aside>
+      </div>
+    </section>
+
+    <!-- ===== PAINEL DE NOTÍCIAS ===== -->
+    <section class="section section-noticias" id="noticias">
+      <div class="section-head">
+        <span class="section-num">04</span>
+        <h2>Painel de notícias: empresas &amp; associações</h2>
+        <p class="section-desc">O que o setor produtivo está dizendo — em até 100 palavras — e a cobertura recente da imprensa.</p>
+      </div>
+      <article class="sumario-card sumario-empresas" id="sumario-empresas"></article>
+      <div class="noticias-grid" id="noticias-grid"></div>
+    </section>
+
+    <!-- ===== MERCADOS & PESQUISAS ===== -->
+    <section class="section section-mercados" id="mercados">
+      <div class="section-head">
+        <span class="section-num">05</span>
+        <h2>Pesquisas de opinião &amp; mercados de previsão</h2>
+        <p class="section-desc">O que dizem os institutos de pesquisa e o que apostam os prediction markets.</p>
+      </div>
+      <div class="mercados-grid">
+        <div class="pesquisas-card">
+          <h3>Pesquisas de opinião</h3>
+          <div id="pesquisas-lista"></div>
+        </div>
+        <div class="polymarket-card" id="polymarket-card">
+          <h3>Prediction markets</h3>
+          <div id="polymarket-conteudo"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="rodape-grid">
+      <div>
+        <h4>Sobre o Radar 6×1</h4>
+        <p>Painel independente de monitoramento da PEC que extingue a escala 6×1, construído a partir de fontes públicas: Agência Senado, Agência Câmara, JOTA, Valor Econômico, Folha de S.Paulo, Estadão, g1/O Globo, Correio Braziliense, Poder360 e Metrópoles, além de institutos de pesquisa e mercados de previsão.</p>
+      </div>
+      <div>
+        <h4>Aviso</h4>
+        <p>As classificações de propensão de voto são estimativas editoriais baseadas em declarações públicas e orientação partidária — não representam compromisso de voto. Atualizado em <span id="rodape-data"></span>.</p>
+      </div>
+    </div>
+    <p class="rodape-assinatura">Radar 6×1 · feito com dados públicos · <span id="rodape-fontes-count"></span> fontes consultadas</p>
+  </footer>
+
+  <script src="data/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
