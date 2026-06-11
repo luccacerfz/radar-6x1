@@ -8,6 +8,7 @@
     { "t": "2026-05-18T12:00:00-03:00", "indice": 62, "componentes": { "noticias": 80, "populacao": 65, "senado": 45 }, "evento": "Rodada de pesquisas (Quaest 68%); comissão especial aprova relatório", "retroativo": true },
     { "t": "2026-05-27T20:00:00-03:00", "indice": 72, "componentes": { "noticias": 98, "populacao": 66, "senado": 55 }, "evento": "Câmara aprova a PEC em dois turnos (472x22 e 461x19)", "retroativo": true },
     { "t": "2026-06-02T12:00:00-03:00", "indice": 70, "componentes": { "noticias": 92, "populacao": 65, "senado": 55 }, "evento": "Alcolumbre: PEC não vai direto ao plenário; passará pela CCJ", "retroativo": true },
-    { "t": "2026-06-11T09:00:00-03:00", "indice": 69, "componentes": { "noticias": 90, "populacao": 65, "senado": 55 }, "evento": "Semana decisiva: relatoria em disputa, sem despacho formal à CCJ", "retroativo": false }
+    { "t": "2026-06-11T09:00:00-03:00", "indice": 69, "componentes": { "noticias": 90, "populacao": 65, "senado": 55 }, "evento": "Semana decisiva: relatoria em disputa, sem despacho formal à CCJ", "retroativo": false },
+    { "t": "2026-06-11T12:00:00-03:00", "indice": 69, "componentes": { "noticias": 90, "populacao": 65, "senado": 55 }, "retroativo": false }
   ]
 }
