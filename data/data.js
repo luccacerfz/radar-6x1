@@ -483,6 +483,81 @@ const DATA = {
     ],
   },
 
+  /* ===== playbook corporativo ===== */
+  playbook: {
+    contexto: [
+      "<strong>Leitura da situação:</strong> barrar a PEC no mérito é improvável — ela passou com 461 votos na Câmara, tem ~70% de apoio popular e votar contra em ano eleitoral tem custo alto. A disputa real no Senado é sobre o <strong>texto</strong> (prazo de transição, exceções setoriais, espaço da negociação coletiva) e sobre o <strong>calendário</strong> (Alcolumbre controla cada checkpoint e qualquer emenda devolve a PEC à Câmara). Para uma empresa intensiva em mão de obra, isso define a estratégia: influenciar o desenho da regra enquanto ela está aberta, preparar a camada jurídica e começar o redesenho operacional agora — quem chegar à vigência com a escala já otimizada transforma um choque de custo em vantagem competitiva sobre concorrentes que ficaram esperando.",
+      "O texto aprovado dá três alavancas que valem dinheiro: a <strong>transição em duas etapas</strong> (42h após 60 dias da promulgação; 40h após mais 12 meses), a <strong>preservação de regimes especiais via acordo coletivo</strong> (12x36 e compensações) e a remissão de detalhes à <strong>regulamentação infraconstitucional</strong> — uma segunda janela de influência que a maioria ainda não está olhando.",
+    ],
+    cenarios: [
+      {
+        nome: "Aprovação com emendas",
+        prob: "~45%",
+        rotulo: "Cenário-base do Radar",
+        base: true,
+        desc: "Senado “aperfeiçoa” o texto (transição mais longa, salvaguardas setoriais e para MPEs) e devolve à Câmara. Promulgação escorrega para 2027. É o cenário que Alcolumbre, PL e o empresariado estão construindo — e o que dá mais tempo e mais espaço de influência.",
+      },
+      {
+        nome: "Aprovação rápida do texto da Câmara",
+        prob: "~30%",
+        rotulo: "Cenário do governo",
+        desc: "Pressão popular + custo eleitoral vencem: plenário antes do recesso de 19/07, sem mudanças de mérito. Relógio da transição começa a correr já: 42h em ~60 dias da promulgação. É o cenário que exige contingência operacional pronta.",
+      },
+      {
+        nome: "Travamento até depois das eleições",
+        prob: "~25%",
+        rotulo: "Cenário do impasse",
+        desc: "Sem acordo Lula–Alcolumbre, a PEC fica presa em comissões e audiências até outubro. A nova legislatura (2027) reabre tudo — inclusive o risco de um texto pior para as empresas se a esquerda crescer no Senado.",
+      },
+    ],
+    frentes: [
+      {
+        num: "Frente 1",
+        titulo: "Corporate affairs & articulação institucional",
+        intro: "O jogo agora é o texto no Senado — e depois, a regulamentação. Atuar via entidades é mais eficaz e menos exposto que lobby individual.",
+        acoes: [
+          { t: "Atue via entidade setorial, não sozinho", d: "CNI, CNC e federações já lideram a coalizão (~3 mil entidades, manifesto de 09/06). Aderir dá escala e blindagem reputacional; pleitos individuais de empresa têm pouco peso e muita exposição." },
+          { t: "Foque na relatoria e nas emendas, não no mérito", d: "A escolha do relator (Omar Aziz desponta) define a profundidade das mudanças. Pleitos com chance real: transição escalonada mais longa, gatilhos por porte/setor, preservação ampla de acordos coletivos, regime próprio para operação contínua (indústria 24/7 e logística)." },
+          { t: "Leve dados próprios, não adjetivos", d: "O que move o debate é artilharia técnica (modelo CNC/FecomercioSP). Simule o impacto na SUA folha por site e categoria e ofereça o estudo aos senadores da sua UF e às audiências públicas — o mapa de votos deste painel mostra quem ouvir primeiro." },
+          { t: "Calibre o tom público", d: "A pauta tem ~70% de apoio: retórica do tipo “absurdo e inviável” gera backlash (senadores retiraram assinaturas da PEC alternativa sob pressão das redes). Posicione-se como “a favor de fazer bem feito”: transição viável, emprego preservado." },
+          { t: "Peça compensações, não só prazo", d: "Janela para acoplar pleitos: desoneração parcial da folha para setores intensivos, crédito de transição, trava de reajuste em contratos públicos. A equipe econômica já estuda compensações para MPEs — grandes empregadores podem entrar nessa negociação." },
+          { t: "Monitore a segunda janela: a regulamentação", d: "Detalhes operacionais (banco de horas, escalas especiais, fiscalização) irão para lei ordinária/regulamentação depois da promulgação. É onde o custo real se define — e onde quase ninguém está atuando ainda." },
+          { t: "Compliance de lobby", d: "Registre interações institucionais conforme as políticas de integridade da empresa. A CartaCapital já noticia o “lobby patronal” nominalmente — exposição é risco reputacional real." },
+        ],
+      },
+      {
+        num: "Frente 2",
+        titulo: "Caminhos legais & jurídicos",
+        intro: "Preparar a camada de proteção antes da vigência: acordos coletivos, auditoria de contratos e teses constitucionais — sem criatividade que vire passivo.",
+        acoes: [
+          { t: "Trave acordos coletivos plurianuais AGORA", d: "O texto preserva regimes especiais (12x36, compensação de jornada) via negociação coletiva. Negociar ACTs de 2 anos antes da vigência, com cláusulas de adaptação escalonada, é a alavanca jurídica mais valiosa disponível — e melhora a relação com o sindicato no momento certo." },
+          { t: "Audite o estoque de contratos", d: "Contratos de trabalho, ACTs vigentes, SLAs logísticos atrelados a janelas de jornada, contratos públicos (reequilíbrio econômico-financeiro) e cláusulas de repasse de custo em contratos comerciais. Mapeie o que quebra com 40h e o que tem gatilho de renegociação." },
+          { t: "Prepare (via confederação) o contencioso constitucional", d: "Se aprovada, teses prováveis em ADI: segurança jurídica da transição, ato jurídico perfeito de ACTs vigentes, eventual vício de iniciativa em pontos da regulamentação. A legitimidade ativa é das confederações (CNI tem histórico) — empresa individual apoia tecnicamente, não lidera." },
+          { t: "Parecer prévio sobre estruturas lícitas de jornada", d: "Banco de horas anualizado, contrato intermitente e a tempo parcial (já na CLT), teletrabalho onde couber, escalas especiais autorizadas. Saiba antes da vigência o que sobrevive no novo regime e com que requisitos." },
+          { t: "Mapeie o passivo que a transição expõe", d: "Mudança de escala costuma trazer à tona passivo de horas extras, intervalos e adicional noturno. Auditoria preventiva + provisionamento evita que a adaptação vire uma onda de reclamatórias." },
+          { t: "Cuidado com atalhos", d: "Pejotização de função operacional, “MEIzação” de frontline e terceirização simulada são os caminhos mais rápidos para multiplicar o passivo. O barato sai caro — especialmente sob fiscalização que tende a endurecer no novo regime." },
+        ],
+      },
+      {
+        num: "Frente 3",
+        titulo: "Operações & workforce (blue collar · indústria e logística)",
+        intro: "O objetivo é cortar o headcount adicional “ingênuo” (+12–15%) para a metade via redesenho de escalas, polivalência e gestão de absenteísmo — começando por piloto.",
+        acoes: [
+          { t: "Diagnóstico de exposição em 30 dias", d: "Mapa por site/turno/função: % do efetivo em 6x1/44h, custo-hora carregado, picos de demanda. Simule 3 cenários (40h em 14 meses; 40h acelerado; 36h) — sem esse mapa, todo o resto é chute." },
+          { t: "Redesenhe a malha de turnos com WFM antes de contratar", d: "Migração 6x1→5x2 “de régua” exige +12–15% de headcount; otimização de escalas contra a curva real de demanda (ferramenta de workforce management, turnos escalonados, janelas móveis) tipicamente derruba isso para +6–8%. É a maior alavanca isolada de mitigação." },
+          { t: "Use o acordo coletivo para escalas contínuas", d: "Para operação 24/7 (planta industrial, CD, last mile), o texto preserva 12x36 e compensações via ACT. Combine com banco de horas anualizado para absorver sazonalidade (peak season) sem hora extra." },
+          { t: "Polivalência reduz a folga estrutural", d: "Frontline multiskilled (operador que cobre 2–3 posições, conferente que opera empilhadeira) reduz o buffer necessário por turno. Programa de certificação interna + adicional por habilidade costuma se pagar no primeiro ano do novo regime." },
+          { t: "Ataque absenteísmo e turnover antes da vigência", d: "Cada ponto percentual de absenteísmo a menos é headcount extra que você não contrata. Saúde ocupacional, previsibilidade de escala e engajamento ganham ROI novo no regime de 40h — e há evidência de queda de absenteísmo nos pilotos de 5x2." },
+          { t: "Automação seletiva, com payback honesto", d: "Sorters, AGVs, picking assistido e poka-yoke nas posições de maior densidade de horas. Mas lean e padronização vêm antes do capex: automatizar processo ruim só acelera o desperdício." },
+          { t: "Mix de contratação para picos", d: "Tempo parcial e intermitente (CLT) para janelas de pico, terceirização lícita de atividades de apoio — desenhados com o jurídico (ver Frente 2) para não virar passivo." },
+          { t: "Rode um piloto 5x2 em 1–2 sites já", d: "Redes de supermercado que pilotaram 5x2 reportaram receptividade positiva e queda de turnover. O piloto gera a curva de aprendizado, os dados reais de custo — e munição crível para o advocacy da Frente 1." },
+          { t: "Reprecifique contratos no ciclo 2026/27", d: "Logística: renegocie SLAs, janelas de entrega e cláusulas de repasse já nas renovações deste ano, usando o cenário-base (vigência provável 2027–28) — não espere a promulgação para abrir essa conversa." },
+        ],
+      },
+    ],
+    disclaimer: "Análise estratégica editorial do Radar 6x1, baseada no texto aprovado pela Câmara em 27/05/2026 e na tramitação até 11/06/2026. Não constitui aconselhamento jurídico; decisões trabalhistas e tributárias exigem assessoria profissional sobre o caso concreto. Probabilidades dos cenários são estimativas editoriais.",
+  },
+
   /* ===== prediction markets ===== */
   predictionMarkets: {
     mercados: [

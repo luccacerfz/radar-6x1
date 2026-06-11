@@ -367,6 +367,44 @@
     }));
   }
 
+  /* ===== playbook corporativo ===== */
+  function renderPlaybook() {
+    const p = DATA.playbook;
+    const sec = document.getElementById("playbook");
+    if (!p) { if (sec) sec.style.display = "none"; return; }
+
+    $("#pb-contexto").innerHTML = p.contexto.map((t) => `<p>${t}</p>`).join("");
+
+    $("#pb-cenarios").innerHTML = p.cenarios.map((c) => `
+      <div class="pb-cenario ${c.base ? "c-base" : ""}">
+        <span class="c-prob">${esc(c.prob)}</span>
+        <span class="c-rotulo">${esc(c.rotulo)}</span>
+        <h4>${esc(c.nome)}</h4>
+        <p>${esc(c.desc)}</p>
+      </div>
+    `).join("");
+
+    $("#pb-frentes").innerHTML = p.frentes.map((f) => `
+      <div class="pb-frente">
+        <div class="pb-frente-head">
+          <span class="f-num">${esc(f.num)}</span>
+          <h3>${esc(f.titulo)}</h3>
+          <p>${esc(f.intro)}</p>
+        </div>
+        <ul class="pb-acoes">
+          ${f.acoes.map((a) => `
+            <li>
+              <span class="a-titulo">${esc(a.t)}</span>
+              <span class="a-desc">${esc(a.d)}</span>
+            </li>
+          `).join("")}
+        </ul>
+      </div>
+    `).join("");
+
+    $("#pb-disclaimer").textContent = p.disclaimer;
+  }
+
   /* ===== boot ===== */
   renderDatas();
   renderFicha();
@@ -381,4 +419,5 @@
   renderPolymarket();
   renderAlcolumbre();
   renderOfensiva();
+  renderPlaybook();
 })();

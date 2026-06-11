@@ -619,6 +619,45 @@ body {
   .of-geral { grid-column: 2; grid-row: 1; justify-self: end; }
 }
 
+/* ===== PLAYBOOK CORPORATIVO ===== */
+.pb-contexto {
+  border-left: 6px solid var(--azul); padding-left: 1.4rem; margin-bottom: 1.8rem;
+  font-family: var(--serif); font-size: clamp(1rem, 1.7vw, 1.15rem); line-height: 1.6; max-width: 86ch;
+}
+
+.pb-contexto p + p { margin-top: 0.8em; }
+
+.pb-cenarios { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; margin-bottom: 2.2rem; }
+
+.pb-cenario { border: var(--linha); background: var(--papel-2); padding: 1.1rem 1.2rem; position: relative; }
+
+.pb-cenario .c-prob {
+  position: absolute; top: 0.9rem; right: 1rem;
+  font-family: var(--serif); font-weight: 900; font-size: 1.4rem; color: var(--urucum);
+}
+
+.pb-cenario .c-rotulo { font-family: var(--mono); font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--tinta-60); display: block; }
+.pb-cenario h4 { font-family: var(--serif); font-weight: 800; font-size: 1.08rem; margin: 0.2rem 0 0.4rem; padding-right: 3.4rem; }
+.pb-cenario p { font-size: 0.82rem; color: var(--tinta-60); }
+.pb-cenario.c-base { border-width: 2.5px; box-shadow: 5px 5px 0 var(--tinta); }
+
+.pb-frentes { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.2rem; }
+
+.pb-frente { border: var(--linha); background: var(--papel-2); display: flex; flex-direction: column; }
+
+.pb-frente-head { background: var(--tinta); color: var(--papel); padding: 1rem 1.2rem; }
+.pb-frente-head .f-num { font-family: var(--mono); font-size: 0.66rem; color: var(--ambar); letter-spacing: 0.12em; text-transform: uppercase; display: block; margin-bottom: 0.2rem; }
+.pb-frente-head h3 { font-family: var(--serif); font-weight: 800; font-size: 1.25rem; line-height: 1.15; }
+.pb-frente-head p { font-size: 0.78rem; color: rgba(247,242,231,0.7); margin-top: 0.4rem; }
+
+.pb-acoes { list-style: none; padding: 0.4rem 0; }
+
+.pb-acoes li { padding: 0.75rem 1.2rem; border-bottom: var(--linha-fina); }
+.pb-acoes li:last-child { border-bottom: none; }
+.pb-acoes .a-titulo { font-weight: 700; font-size: 0.9rem; display: block; font-family: var(--sans); }
+.pb-acoes .a-titulo::before { content: "▸ "; color: var(--urucum); }
+.pb-acoes .a-desc { font-size: 0.8rem; color: var(--tinta-60); display: block; margin-top: 0.15rem; padding-left: 1rem; }
+
 /* ===== RODAPÉ ===== */
 .rodape { background: var(--tinta); color: var(--papel); padding: clamp(2rem, 5vw, 3.5rem) clamp(1rem, 4vw, 3rem) 1.5rem; }
 
