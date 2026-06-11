@@ -24,6 +24,7 @@
     <p class="masthead-sub">O fim da escala 6×1 em tramitação no Senado Federal — calor da discussão, mapa de votos e o que dizem trabalhadores, senadores e empresas</p>
     <nav class="masthead-nav">
       <a href="#indice">Índice de calor</a>
+      <a href="#aovivo">Ao vivo</a>
       <a href="#senadores">Mapa de votos</a>
       <a href="#debates">Debates no Senado</a>
       <a href="#noticias">Painel de notícias</a>
@@ -73,6 +74,48 @@
         <summary>Metodologia do índice</summary>
         <p id="metodologia-texto"></p>
       </details>
+    </section>
+
+    <!-- ===== MONITOR AO VIVO ===== -->
+    <section class="section section-aovivo" id="aovivo">
+      <div class="section-head">
+        <span class="section-num">01.5</span>
+        <h2><span class="live-dot" aria-hidden="true"></span> Monitor ao vivo</h2>
+        <p class="section-desc">A temperatura da discussão ao longo do tempo — atualizada automaticamente a cada 30 minutos por um robô de monitoramento — e leituras em tempo real buscadas agora, do seu navegador.</p>
+      </div>
+      <div class="aovivo-grid">
+        <div class="grafico-card">
+          <div class="grafico-head">
+            <h3>Histórico da temperatura</h3>
+            <span class="grafico-status" id="grafico-status">carregando…</span>
+          </div>
+          <div id="grafico-temperatura" class="grafico-temperatura"></div>
+          <p class="grafico-legenda" id="grafico-legenda"></p>
+        </div>
+        <div class="live-coluna">
+          <div class="live-card">
+            <div class="live-card-head">
+              <h4>Volume de notícias agora</h4>
+              <span class="live-badge">GDELT · tempo real</span>
+            </div>
+            <div id="gdelt-spark" class="gdelt-spark"><span class="live-carregando">consultando GDELT…</span></div>
+            <p class="live-nota" id="gdelt-nota">Intensidade da cobertura global de imprensa sobre a escala 6x1 nos últimos 2 meses, medida pelo GDELT Project.</p>
+          </div>
+          <div class="live-card">
+            <div class="live-card-head">
+              <h4>Mercado de previsão</h4>
+              <span class="live-badge">Manifold · tempo real</span>
+            </div>
+            <div class="manifold-prob" id="manifold-prob"><span class="live-carregando">consultando…</span></div>
+            <p class="live-nota">“Will Brazil implement a four-day work week before 2030?” — mercado tangencial mais próximo do tema (não existe mercado específico sobre a PEC).</p>
+          </div>
+          <div class="live-card live-card-relogio">
+            <div class="live-card-head"><h4>Última leitura do robô</h4></div>
+            <div class="relogio-valor" id="ultima-leitura">—</div>
+            <p class="live-nota">O robô reavalia o índice a cada 30 minutos e registra um novo ponto no gráfico. Esta página se atualiza sozinha a cada 5 minutos.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- ===== MAPA DE VOTOS ===== -->
@@ -126,6 +169,12 @@
         <p class="section-desc">O que o setor produtivo está dizendo — em até 100 palavras — e a cobertura recente da imprensa.</p>
       </div>
       <article class="sumario-card sumario-empresas" id="sumario-empresas"></article>
+      <div class="ultimas-head">
+        <h3><span class="live-dot" aria-hidden="true"></span> Últimas notícias</h3>
+        <span class="live-badge">GDELT · tempo real · atualiza a cada 5 min</span>
+      </div>
+      <div class="ultimas-grid" id="ultimas-grid"><span class="live-carregando">buscando as notícias mais recentes…</span></div>
+      <div class="ultimas-head"><h3>Cobertura selecionada</h3><span class="live-badge">curadoria editorial</span></div>
       <div class="noticias-grid" id="noticias-grid"></div>
     </section>
 
@@ -165,5 +214,6 @@
 
   <script src="data/data.js"></script>
   <script src="js/app.js"></script>
+  <script src="js/live.js"></script>
 </body>
 </html>

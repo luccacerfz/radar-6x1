@@ -1,0 +1,13 @@
+{
+  "descricao": "Série temporal do índice de calor do Radar 6x1. Pontos anteriores a 11/06/2026 são reconstituições editoriais retroativas de marcos da discussão; a partir de 11/06/2026 os pontos são gerados automaticamente a cada 30 minutos.",
+  "pontos": [
+    { "t": "2024-11-15T12:00:00-03:00", "indice": 55, "componentes": { "noticias": 85, "populacao": 60, "senado": 25 }, "evento": "Pico viral: PEC atinge assinaturas na Câmara, atos em 28 cidades", "retroativo": true },
+    { "t": "2025-02-10T12:00:00-03:00", "indice": 47, "componentes": { "noticias": 60, "populacao": 62, "senado": 25 }, "evento": "PEC 8/2025 protocolada com 234 assinaturas; petição com ~3 milhões", "retroativo": true },
+    { "t": "2025-08-01T12:00:00-03:00", "indice": 33, "componentes": { "noticias": 25, "populacao": 60, "senado": 25 }, "evento": "Tramitação parada na Câmara; tema esfria", "retroativo": true },
+    { "t": "2026-04-22T12:00:00-03:00", "indice": 55, "componentes": { "noticias": 65, "populacao": 64, "senado": 38 }, "evento": "CCJ da Câmara aprova admissibilidade; contraofensiva empresarial começa", "retroativo": true },
+    { "t": "2026-05-18T12:00:00-03:00", "indice": 62, "componentes": { "noticias": 80, "populacao": 65, "senado": 45 }, "evento": "Rodada de pesquisas (Quaest 68%); comissão especial aprova relatório", "retroativo": true },
+    { "t": "2026-05-27T20:00:00-03:00", "indice": 72, "componentes": { "noticias": 98, "populacao": 66, "senado": 55 }, "evento": "Câmara aprova a PEC em dois turnos (472x22 e 461x19)", "retroativo": true },
+    { "t": "2026-06-02T12:00:00-03:00", "indice": 70, "componentes": { "noticias": 92, "populacao": 65, "senado": 55 }, "evento": "Alcolumbre: PEC não vai direto ao plenário; passará pela CCJ", "retroativo": true },
+    { "t": "2026-06-11T09:00:00-03:00", "indice": 69, "componentes": { "noticias": 90, "populacao": 65, "senado": 55 }, "evento": "Semana decisiva: relatoria em disputa, sem despacho formal à CCJ", "retroativo": false }
+  ]
+}
