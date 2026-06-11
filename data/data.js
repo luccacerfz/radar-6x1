@@ -177,9 +177,9 @@ const DATA = {
 
   /* ===== sumário empresas (máx. 100 palavras) ===== */
   empresas: {
-    contagemPalavras: 97,
+    contagemPalavras: 99,
     paragrafos: [
-      "O setor produtivo reagiu em bloco: CNI, CNC, FecomercioSP, Fiesp, Abrasel, ABRAS, CACB e Sebrae — e um manifesto com cerca de 2.600 entidades — classificam a PEC de “inadequada e inoportuna”, pedem que a jornada seja tratada por negociação coletiva e apoiam a PEC alternativa do “trabalho flexível”. A CNC estima custo de R$ 358 bilhões ao ano e perda de até 631 mil empregos; a Abrasel chama o texto de “absurdo e inviável”. Do outro lado, as centrais sindicais celebram, denunciaram a “ofensiva patronal” à OIT e citam o Dieese: custo médio de apenas 7,84%.",
+      "O setor produtivo reagiu em bloco: CNI, CNC, FecomercioSP, Fiesp, Abrasel, ABRAS e CACB — e um manifesto com cerca de 3 mil entidades — classificam a PEC de “inadequada e inoportuna”, pedem que a jornada seja tratada por negociação coletiva e apoiam a PEC alternativa do “trabalho flexível”. A CNC estima custo de R$ 358 bilhões ao ano e perda de até 631 mil empregos; a Abrasel chama o texto de “absurdo e inviável”. Já o Sebrae apoia o fim da 6x1, e as centrais sindicais denunciaram a “ofensiva patronal” à OIT, citando o Dieese: custo de 7,84%.",
     ],
   },
 
@@ -236,9 +236,9 @@ const DATA = {
     {
       titulo: "Carta de entidades empresariais mira PEC que extingue escala 6x1",
       fonte: "Migalhas",
-      data: "jun/2026",
+      data: "09/06/2026",
       url: "https://www.migalhas.com.br/quentes/457665/carta-de-entidades-empresariais-mira-pec-que-extingue-escala-6x1",
-      resumo: "Manifesto “Uma Carta para o Brasil que Acorda Cedo” reúne ~2.600 entidades (CNI, CNC, CNA, CNT, Fiesp) em defesa da PEC do Trabalho Flexível.",
+      resumo: "Manifesto “Uma Carta para o Brasil que Acorda Cedo” reúne ~3 mil entidades (CNI, CNC, CNA, CNT, Fiesp) com anúncios de página inteira dirigidos aos senadores.",
       categoria: "Empresas",
     },
     {
@@ -305,6 +305,183 @@ const DATA = {
       nota: "Primeira medição de referência, no auge da viralização do movimento VAT (Vida Além do Trabalho).",
     },
   ],
+
+  /* ===== zoom: o fator Alcolumbre ===== */
+  alcolumbre: {
+    cargo: "Presidente do Senado Federal · mandato até 2031 · não disputa as eleições de 2026",
+    termometros: [
+      {
+        nome: "Disposição a deixar a PEC andar rápido",
+        valor: 30,
+        nota: "14 dias sem despachar a PEC à CCJ; cancelou de última hora a reunião com Otto Alencar (09/06); condiciona o avanço a uma reunião sem data com Lula.",
+      },
+      {
+        nome: "Chance de votar a favor (texto modificado)",
+        valor: 65,
+        nota: "“Nem a favor, nem contra” — mas dificilmente será o “coveiro” de pauta com ~70% de apoio popular. Tende a apoiar versão com transição mais longa e salvaguardas.",
+      },
+      {
+        nome: "Uso da PEC como moeda política",
+        valor: 90,
+        nota: "A tese mais documentada nos bastidores (CNN, Cláudio Humberto): a PEC virou ativo na negociação com o Planalto e na reeleição à presidência do Senado em 2027.",
+      },
+    ],
+    leitura: [
+      "<strong>Ritmo:</strong> vai deixar a PEC andar, mas devagar e cobrando pedágio. O despacho à CCJ deve sair em dias (Efraim Filho, líder do seu partido, fala em “esta semana ou a próxima”), mas a votação em plenário antes do recesso de 19/07 — o cronograma do governo — é improvável: ele controla cada checkpoint (despacho, relator, pauta) e já condicionou tudo a uma reunião sem data com Lula. Cenário mais provável: CCJ em julho/agosto e plenário em ritmo que não gera efeitos antes das eleições de outubro — exatamente o resultado preferido por PL e empresariado, sem que ele precise rejeitar nada.",
+      "<strong>Mérito:</strong> não declarou voto (“vou com a minha consciência e com o meu coração decidir”). A estimativa do Radar é que votaria a favor de uma versão modificada — transição mais longa e salvaguardas para pequenas empresas. E há um detalhe decisivo: texto emendado volta à Câmara, ou seja, “aperfeiçoar” a PEC também é uma forma elegante de atrasá-la.",
+      "<strong>O cenário que ele constrói:</strong> um leilão de posição. Para o Planalto, a PEC anda se Lula pagar — agenda direta, prestígio restaurado após a derrota de Messias no STF e apoio à sua reeleição na presidência do Senado em 2027. Para o empresariado e o PL, tempo, audiências e um texto desidratado. Para o público, o discurso institucional de que “o Senado não carimba”. O movimento-síntese: condicionar uma PEC aprovada com 472 votos na Câmara a uma reunião privada com o Presidente da República — o objeto da negociação não é a jornada de trabalho, é a relação de poder.",
+    ],
+    baseLeitura: "28 fontes · Agência Senado, CNN Brasil, Metrópoles, Gazeta do Povo, Correio Braziliense, PlatôBR, IstoÉ, O Tempo, Poder360 e outras",
+    timeline: [
+      {
+        data: "26/05",
+        titulo: "Recebe a cúpula da CNI e da Fiesp na véspera da votação na Câmara",
+        citacao: "Empresários pedem avaliação “com equilíbrio, maturidade e fora do período eleitoral” — e saem com a missão de mobilizar contra a PEC",
+        fonte: "Portal da Indústria · Poder360",
+        url: "https://www.poder360.com.br/poder-economia/empresarios-se-reunem-com-alcolumbre-para-atrasar-fim-da-6-x-1/",
+      },
+      {
+        data: "28/05",
+        titulo: "Dois pesos: despacha a PEC alternativa de Marinho à CCJ em menos de 24h",
+        citacao: "A PEC 221, aprovada pela Câmara, fica retida na Mesa sem despacho — assimetria explorada por toda a cobertura crítica",
+        fonte: "Diário do Poder · ICL Notícias",
+        url: "https://www12.senado.leg.br/noticias/materias/2026/05/28/rogerio-marinho-propoe-pec-que-flexibiliza-jornada-de-trabalho",
+      },
+      {
+        data: "02/06",
+        titulo: "Fixa o rito em plenário: a PEC vai tramitar nas comissões",
+        citacao: "Seria muito razoável se o Senado pudesse melhorar um texto com essa importância… com calma, sem açodamento, sem pressa",
+        fonte: "Agência Senado",
+        url: "https://www12.senado.leg.br/noticias/materias/2026/06/02/pec-da-escala-6x1-nao-ira-diretamente-para-o-plenario-do-senado-diz-davi",
+      },
+      {
+        data: "02/06",
+        titulo: "Desabafo contra a pressão do Planalto e da CCJ",
+        citacao: "Não me obrigue, não me ameace, não me ofenda, não me ataque… Eu vou com a minha consciência e com o meu coração decidir qual é o meu voto",
+        fonte: "PlatôBR",
+        url: "https://platobr.com.br/o-desabafo-de-alcolumbre-diante-das-pressoes-pela-pec-6x1-nao-me-ameaceque",
+      },
+      {
+        data: "04/06",
+        titulo: "Cogita rito inédito (comissão especial) e se diz neutro",
+        citacao: "Não é razoável que a Câmara passe cinco meses debatendo… e o Senado seja obrigado a carimbar. Essa é a minha percepção, nem a favor, nem contra",
+        fonte: "IstoÉ · Jornal de Brasília",
+        url: "https://istoe.com.br/pec-6x1-alcolumbre-adia-analise-rito-diferente-senado",
+      },
+      {
+        data: "09/06",
+        titulo: "Cancela de última hora a reunião com Otto Alencar (CCJ)",
+        citacao: "Otto, irritado: “não foi nem ele que ligou, foi a secretária dele”. A reunião de líderes prometida também não acontece",
+        fonte: "Metrópoles · Igor Gadelha",
+        url: "https://www.metropoles.com/colunas/igor-gadelha/alcolumbre-cancela-de-ultima-hora-reuniao-com-chefe-da-ccj-sobre-6x1",
+      },
+      {
+        data: "10/06",
+        titulo: "Condiciona o avanço da PEC a uma reunião com Lula",
+        citacao: "Disse a interlocutores que a PEC só anda após encontro com o presidente “para definir a agenda do Congresso” — sem data marcada",
+        fonte: "CNN Brasil · Caio Junqueira",
+        url: "https://www.cnnbrasil.com.br/blogs/caio-junqueira/politica/alcolumbre-segura-pec-da-escala-6x1-e-condiciona-avanco-a-reuniao-com-lula/",
+      },
+      {
+        data: "11/06",
+        titulo: "Sinal de degelo: despacho à CCJ pode sair em dias",
+        citacao: "Efraim Filho (líder do União Brasil), após conversa com ele: despacho “ainda nesta semana ou na próxima”. Status: 14 dias sem despacho, sem relator",
+        fonte: "Correio Braziliense",
+        url: "https://www.correiobraziliense.com.br/politica/2026/06/7438084-alcolumbre-evita-acelerar-pec-do-fim-da-escala-6x1-no-senado.html",
+      },
+    ],
+    incentivos: [
+      {
+        titulo: "Reeleição na presidência do Senado (fev/2027)",
+        descricao: "Seu objetivo central. Precisa de governistas E oposição na nova legislatura — por isso “joga uma no cravo e outra na ferradura” (Denise Rothenburg).",
+      },
+      {
+        titulo: "Crise com Lula pós-Messias",
+        descricao: "Liderou a rejeição histórica de Jorge Messias ao STF (abr/2026). A PEC virou a moeda de recomposição: o avanço foi condicionado a uma agenda com o presidente.",
+      },
+      {
+        titulo: "Gravidade empresarial",
+        descricao: "Recebeu CNI e Fiesp na véspera da votação na Câmara; não há registro de reunião com as centrais sindicais. A PEC de Marinho andou em 24h; a da Câmara, não.",
+      },
+      {
+        titulo: "Custo de ser o “coveiro”",
+        descricao: "Pauta com ~70% de apoio popular, atos marcados (24/06) e pressão das centrais nos estados. Esmagar a PEC cobraria preço no Amapá, onde seu grupo apoia Lula.",
+      },
+      {
+        titulo: "Precedente de engavetamento",
+        descricao: "Já usou o não-pautar como arma: segurou a sabatina de André Mendonça por meses em 2021. Controla cada checkpoint: despacho, relator, pauta de plenário.",
+      },
+      {
+        titulo: "Relatoria como instrumento",
+        descricao: "7 postulantes. Governo quer Camilo Santana (PT); o padrão Alcolumbre favorece um nome do centrão que “aperfeiçoe” o texto — Omar Aziz desponta como aposta “ganha-ganha”.",
+      },
+    ],
+  },
+
+  /* ===== zoom: ofensiva empresarial ===== */
+  ofensiva: {
+    dimensoes: ["Dureza retórica", "Artilharia técnica", "Ação política", "Peso institucional"],
+    veredicto: "A <strong>CNI lidera a ofensiva</strong>. É a única entidade no nível máximo nas quatro dimensões: comanda o manifesto “Uma Carta para o Brasil que Acorda Cedo” (~3 mil entidades), bancou anúncios de página inteira dirigidos nominalmente aos senadores (09/06), detém o estudo macro de referência (custo de até R$ 267 bi/ano) e seu presidente, Ricardo Alban, fez em 10/06 a defesa pública mais explícita da PEC alternativa. A estratégia patronal é dual: <strong>CNI, Fiesp e CACB</strong> jogam o jogo institucional — desacelerar a PEC 221 nas comissões e emplacar a PEC 12/2026 —, <strong>Abrasel e Luciano Hang</strong> dão o choque retórico, e <strong>CNC e FecomercioSP</strong> fornecem a munição numérica. A Fiesp é a campeã do lobby presencial: levou comitiva a Alcolumbre em 26/05 para alongar a transição.",
+    nota: "Notas de 0 a 10 por dimensão — avaliação editorial do Radar sobre fatos reportados pela imprensa até 11/06/2026. Correção relevante: o Sebrae, por vezes listado no campo contrário, na verdade apoia o fim da 6x1 (Décio Lima: “modelo arcaico”).",
+    ranking: [
+      {
+        nome: "CNI",
+        notaGeral: 9.3,
+        notas: [8.5, 10, 10, 10],
+        citacao: "Aprovação da PEC é inadequada e inoportuna",
+        acoes: "Lidera o manifesto de ~3 mil entidades · anúncios de página inteira nos jornais · estudo de até R$ 267 bi/ano · defesa pública da PEC 12/2026 (Alban, 10/06)",
+      },
+      {
+        nome: "Fiesp",
+        notaGeral: 8.9,
+        notas: [7.5, 8, 10, 10],
+        citacao: "Comitiva foi ao Senado para atrasar a transição da jornada",
+        acoes: "Lobby presencial com Alcolumbre (26/05) · co-líder do manifesto e dos anúncios pagos · acesso direto à cúpula do Senado",
+      },
+      {
+        nome: "CNC",
+        notaGeral: 8.8,
+        notas: [8, 10, 8.5, 9],
+        citacao: "Custo de R$ 358 bilhões e repasse de até 13% nos preços",
+        acoes: "Estudo setorial mais caro em valores absolutos (+21% na folha) · porta-voz ativo (Tadros: pressão “insustentável”) · signatária de 1ª linha do manifesto",
+      },
+      {
+        nome: "Abrasel",
+        notaGeral: 8.3,
+        notas: [10, 7, 8, 7],
+        citacao: "Absurdo e inviável… uma ruptura feita sem medir as consequências",
+        acoes: "Retórica mais dura do campo patronal · endosso formal à PEC 12/2026 · elogios estratégicos a Alcolumbre pela desaceleração",
+      },
+      {
+        nome: "FecomercioSP",
+        notaGeral: 8.1,
+        notas: [8, 9.5, 7.5, 7.5],
+        citacao: "Custo da hora subiria 37,5%; efeitos seriam devastadores",
+        acoes: "Dois estudos quantitativos (1,2 mi de empregos no 1º ano) · articulação declarada com Legislativo e Executivo · distribuiu material na Câmara",
+      },
+      {
+        nome: "CACB",
+        notaGeral: 7.5,
+        notas: [6.5, 5, 9, 8],
+        citacao: "PEC cria modelo engessado, lei de tamanho único",
+        acoes: "Motor da capilaridade do manifesto (224 entidades só em SC) · pressão distribuída sobre senadores de todos os estados",
+      },
+      {
+        nome: "ABRAS",
+        notaGeral: 6.3,
+        notas: [4, 6, 7, 8],
+        citacao: "Transição gradual vinculada aos ganhos da reforma tributária",
+        acoes: "Tom mais conciliador do campo · aposta no Senado como espaço de pressão para alterar prazos e escalas",
+      },
+      {
+        nome: "Luciano Hang / Havan",
+        notaGeral: 5.8,
+        notas: [10, 4, 4, 5],
+        citacao: "Se for para quebrar o Brasil, que seja rápido",
+        acoes: "Megafone midiático individual · prevê +15–20% nos custos da Havan · sem lobby institucional estruturado",
+      },
+    ],
+  },
 
   /* ===== prediction markets ===== */
   predictionMarkets: {

@@ -289,6 +289,84 @@
       (pm.nota ? `<p class="poly-vazio" style="margin-top:0.8rem">${pm.nota}</p>` : "");
   }
 
+  /* ===== zoom: Alcolumbre ===== */
+  function renderAlcolumbre() {
+    const a = DATA.alcolumbre;
+    const sec = document.getElementById("alcolumbre");
+    if (!a) { if (sec) sec.style.display = "none"; return; }
+
+    $("#alco-cargo").textContent = a.cargo;
+
+    $("#alco-termometros").innerHTML = a.termometros.map((t) => `
+      <div class="alco-termo">
+        <div class="t-head"><span class="t-nome">${esc(t.nome)}</span><span class="t-valor">${t.valor}<small>/100</small></span></div>
+        <div class="t-barra"><div class="t-fill" data-w="${t.valor}"></div></div>
+        <p class="t-nota">${esc(t.nota)}</p>
+      </div>
+    `).join("");
+
+    $("#alco-leitura").innerHTML =
+      a.leitura.map((p) => `<p>${p}</p>`).join("") +
+      `<span class="assinatura">Leitura do Radar · baseada em ${esc(a.baseLeitura)}</span>`;
+
+    $("#alco-timeline").innerHTML = a.timeline.map((e) => `
+      <div class="alco-evento">
+        <span class="e-data">${esc(e.data)}</span>
+        <p class="e-titulo">${esc(e.titulo)}</p>
+        ${e.citacao ? `<p class="e-citacao">“${esc(e.citacao)}”</p>` : ""}
+        <span class="e-fonte">${e.url ? `<a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.fonte)}</a>` : esc(e.fonte)}</span>
+      </div>
+    `).join("");
+
+    $("#alco-incentivos").innerHTML = a.incentivos.map((i) => `
+      <div class="alco-incentivo"><h4>${esc(i.titulo)}</h4><p>${esc(i.descricao)}</p></div>
+    `).join("");
+
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      document.querySelectorAll(".alco-termo .t-fill").forEach((b) => { b.style.width = b.dataset.w + "%"; });
+    }));
+  }
+
+  /* ===== zoom: ofensiva empresarial ===== */
+  function renderOfensiva() {
+    const o = DATA.ofensiva;
+    const sec = document.getElementById("ofensiva");
+    if (!o) { if (sec) sec.style.display = "none"; return; }
+
+    $("#ofensiva-veredicto").innerHTML =
+      `<span class="v-rotulo">Veredicto do Radar</span>` + o.veredicto;
+
+    $("#ofensiva-ranking").innerHTML = o.ranking.map((e, idx) => `
+      <div class="of-item ${idx === 0 ? "of-lider" : ""}">
+        <span class="of-pos">${idx + 1}º</span>
+        <div class="of-quem">
+          <span class="of-nome">${esc(e.nome)}</span>
+          <span class="of-citacao">“${esc(e.citacao)}”</span>
+          <span class="of-acoes">${esc(e.acoes)}</span>
+        </div>
+        <div class="of-dims">
+          ${e.notas.map((n, i) => `
+            <div class="of-dim">
+              <span class="d-nome">${esc(o.dimensoes[i])}</span>
+              <div class="d-barra"><div class="d-fill" data-w="${n * 10}"></div></div>
+              <span class="d-num">${n}</span>
+            </div>
+          `).join("")}
+        </div>
+        <div class="of-geral">
+          <span class="g-num">${e.notaGeral.toFixed(1).replace(".", ",")}</span>
+          <span class="g-rotulo">nota geral</span>
+        </div>
+      </div>
+    `).join("");
+
+    $("#ofensiva-nota").textContent = o.nota;
+
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      document.querySelectorAll(".of-dim .d-fill").forEach((b) => { b.style.width = b.dataset.w + "%"; });
+    }));
+  }
+
   /* ===== boot ===== */
   renderDatas();
   renderFicha();
@@ -301,4 +379,6 @@
   renderNoticias();
   renderPesquisas();
   renderPolymarket();
+  renderAlcolumbre();
+  renderOfensiva();
 })();
