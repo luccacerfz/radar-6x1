@@ -26,7 +26,19 @@ js/app.js         renderizador — lê DATA e monta o DOM
 data/data.js      todos os dados do painel em um único objeto JS
 ```
 
-Site 100% estático, sem build. Para atualizar o painel, edite apenas `data/data.js`.
+Site 100% estático, sem build. Para atualizar o painel manualmente, edite `data/data.js` (conteúdo) ou `data/history.json` (série do índice).
+
+## Atualização automática (100% na nuvem)
+
+Três rotinas de cloud agents (Claude Code Routines) mantêm o painel sem nenhuma máquina local ligada — cada push na `main` dispara redeploy automático no Vercel:
+
+| Rotina | Cron (UTC) | O que faz |
+|---|---|---|
+| `Radar 6x1 — leitura :00` | `0 * * * *` | Pesquisa notícias, recalcula o índice e adiciona um ponto em `data/history.json` |
+| `Radar 6x1 — leitura :30` | `30 * * * *` | Idem, defasada 30 min (juntas = leitura a cada 30 minutos) |
+| `Radar 6x1 — atualização profunda diária` | `0 9 * * *` | Revisa todo o `data/data.js`: ficha, senadores, sumários, notícias, pesquisas, zoom Alcolumbre, ranking empresarial e prediction markets |
+
+Além disso, o navegador do visitante busca em tempo real: últimas notícias e volume de cobertura (GDELT, a cada 5/15 min) e probabilidade do Manifold Markets (a cada 10 min). Gerenciamento das rotinas: https://claude.ai/code/routines
 
 ## Aviso
 

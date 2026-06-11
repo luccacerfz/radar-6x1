@@ -76,12 +76,32 @@
         </g>`;
     }).join("");
 
-    // rótulos do eixo X: primeiro, último e pontos com evento (máx. ~6)
-    const idxRotulos = new Set([0, pts.length - 1]);
-    pts.forEach((p, i) => { if (p.evento && idxRotulos.size < 7) idxRotulos.add(i); });
-    const rotulosX = [...idxRotulos].sort((a, b) => a - b).map((i) => `
-      <text x="${x(i).toFixed(1)}" y="${H - 8}" text-anchor="middle" class="g-eixo">${fmtCurto(pts[i].t)}</text>
-    `).join("");
+    // rótulos do eixo X: no máx. 5, uniformemente espaçados (evita sobreposição)
+    const fmtEixo = (iso) => {
+      const d = new Date(iso);
+      const mes = d.toLocaleDateString("pt-BR", { month: "short" }).replace(".", "");
+      return `${mes}/${String(d.getFullYear()).slice(2)}`;
+    };
+    const MAX_ROTULOS = 5;
+    const passo = Math.max(1, Math.ceil((pts.length - 1) / (MAX_ROTULOS - 1)));
+    const idxRotulos = [];
+    for (let i = 0; i < pts.length - 1; i += passo) idxRotulos.push(i);
+    // garante o último ponto sem colidir com o penúltimo rótulo
+    if (pts.length - 1 - idxRotulos[idxRotulos.length - 1] < passo / 2) idxRotulos.pop();
+    idxRotulos.push(pts.length - 1);
+    const fmtDiaHora = (iso) => {
+      const d = new Date(iso);
+      return d.toLocaleDateString("pt-BR", { day: "2-digit", month: "short" }).replace(".", "") +
+        " " + d.toLocaleTimeString("pt-BR", { hour: "2-digit", minute: "2-digit" });
+    };
+    let rotAnterior = "";
+    const rotulosX = idxRotulos.map((i, k) => {
+      const ancora = k === 0 ? "start" : k === idxRotulos.length - 1 ? "end" : "middle";
+      let rot = i === pts.length - 1 ? fmtDiaHora(pts[i].t) : fmtEixo(pts[i].t);
+      if (rot === rotAnterior) rot = fmtDiaHora(pts[i].t); // desambigua meses repetidos
+      rotAnterior = rot;
+      return `<text x="${x(i).toFixed(1)}" y="${H - 8}" text-anchor="${ancora}" class="g-eixo">${rot}</text>`;
+    }).join("");
 
     $("#grafico-temperatura").innerHTML = `
       <svg viewBox="0 0 ${W} ${H}" class="g-svg" role="img" aria-label="Gráfico do índice de calor ao longo do tempo">
