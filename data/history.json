@@ -368,6 +368,17 @@
         "senado": 55
       },
       "retroativo": false
+    },
+    {
+      "t": "2026-06-11T21:36:49-03:00",
+      "indice": 69,
+      "componentes": {
+        "noticias": 90,
+        "populacao": 65,
+        "senado": 55
+      },
+      "evento": "Câmara: Motta designa Leo Prates relator do PL do governo sobre jornada; PEC sem despacho à CCJ no Senado",
+      "retroativo": false
     }
   ]
 }
