@@ -5,7 +5,7 @@
    ============================================================ */
 
 const DATA = {
-  atualizadoEm: "2026-06-11",
+  atualizadoEm: "2026-06-12",
   totalFontes: "60+",
 
   /* ===== ficha da proposta ===== */
@@ -23,7 +23,7 @@ const DATA = {
     valor: 69,
     classificacao: "Quente",
     nota: "A discussão está quente e em fase decisiva: cobertura de imprensa no máximo histórico, apoio popular majoritário e um Senado moderadamente inclinado a aprovar — mas freado por Alcolumbre e pela ofensiva empresarial em torno de uma PEC alternativa.",
-    metodologia: "O índice vai de 0 (discussão fria, sem chance de avanço) a 100 (ebulição máxima, aprovação iminente). É a média ponderada de três componentes avaliados editorialmente a partir das fontes coletadas em 11/06/2026: volume de notícias (peso 30%) — densidade da cobertura na imprensa profissional, medida por eventos noticiados e análises de meta-cobertura como a do Observatório da Imprensa; favorabilidade da população (peso 35%) — média das pesquisas mais recentes (Quaest 68%, Datafolha/Abrasel 64%, AtlasIntel 56%), descontada a sensibilidade ao corte salarial; inclinação do Senado (peso 35%) — leitura qualitativa da correlação de forças: placar potencial favorável, custo eleitoral de votar contra, mas relatoria indefinida, presidência da Casa resistente à pressa e 40 assinaturas na PEC alternativa. Escala: 0–25 frio · 25–50 morno · 50–75 quente · 75–100 fervendo.",
+    metodologia: "O índice vai de 0 (discussão fria, sem chance de avanço) a 100 (ebulição máxima, aprovação iminente). É a média ponderada de três componentes avaliados editorialmente a partir das fontes coletadas em 12/06/2026: volume de notícias (peso 30%) — densidade da cobertura na imprensa profissional, medida por eventos noticiados e análises de meta-cobertura como a do Observatório da Imprensa; favorabilidade da população (peso 35%) — média das pesquisas mais recentes (Quaest 68%, Datafolha/Abrasel 64%, AtlasIntel 56%), descontada a sensibilidade ao corte salarial; inclinação do Senado (peso 35%) — leitura qualitativa da correlação de forças: placar potencial favorável, custo eleitoral de votar contra, mas relatoria indefinida, presidência da Casa resistente à pressa e 40 assinaturas na PEC alternativa. Escala: 0–25 frio · 25–50 morno · 50–75 quente · 75–100 fervendo.",
     componentes: [
       {
         nome: "Volume de notícias",
@@ -90,7 +90,7 @@ const DATA = {
     { nome: "Wellington Fagundes", partido: "PL", uf: "MT", propensao: "Provavelmente contrário", vies: "Direita, agro/logística; assinou a PEC 12 mas pediu sessão temática (dialoga)", fonte: "Assinou a PEC 12/2026", fonteUrl: "https://www.congressoemfoco.com.br/noticia/119260/40-senadores-assinam-pec-alternativa-ao-fim-da-escala-6x1-veja-lista" },
     { nome: "Beto Faro", partido: "PT", uf: "PA", propensao: "Favorável", vies: "Esquerda, movimentos rurais", fonte: "Bancada do PT", fonteUrl: "https://ptnosenado.org.br/fazendo-historia-camara-aprova-fim-da-escala-6x1-e-bancada-petista-vai-trabalhar-por-conclusao-rapida-no-senado/" },
     { nome: "Jader Barbalho", partido: "MDB", uf: "PA", propensao: "Provavelmente favorável", vies: "Centrão governista, cacique paraense", fonte: "Inferido (alinhamento governista)" },
-    { nome: "Zequinha Marinho", partido: "Podemos", uf: "PA", propensao: "Provavelmente favorável", vies: "Direita evangélica; retirou assinatura da PEC 12 sob pressão popular", fonte: "Declaração pública", fonteUrl: "https://www.metropoles.com/brasil/sob-pressao-oposicao-perde-tres-assinaturas-em-pec-alternativa-a-6x1" },
+    { nome: "Zequinha Marinho", partido: "Podemos", uf: "PA", propensao: "Provavelmente favorável", vies: "Direita evangélica; pediu retirar assinatura da PEC 12 (Senado negou o pedido — regimento impede retirada pós-publicação) sob pressão popular", fonte: "Declaração pública + negativa do Senado", fonteUrl: "https://www.poder360.com.br/poder-congresso/senado-barra-retirada-de-apoio-a-pec-alternativa-ao-fim-da-6-x-1/" },
     { nome: "Daniella Ribeiro", partido: "PP", uf: "PB", propensao: "Provavelmente contrário", vies: "Centrão, clã político paraibano", fonte: "Inferido (partido); não assinou a PEC 12" },
     { nome: "Efraim Filho", partido: "PL", uf: "PB", propensao: "Provavelmente contrário", vies: "Liberal, ligado ao setor produtivo (ex-União Brasil)", fonte: "Assinou a PEC 12/2026", fonteUrl: "https://www.congressoemfoco.com.br/noticia/119260/40-senadores-assinam-pec-alternativa-ao-fim-da-escala-6x1-veja-lista" },
     { nome: "Veneziano Vital do Rêgo", partido: "MDB", uf: "PB", propensao: "Provavelmente favorável", vies: "Ala centro-esquerda do MDB, governista", fonte: "Inferido (alinhamento governista)" },
@@ -105,7 +105,7 @@ const DATA = {
     { nome: "Sergio Moro", partido: "PL", uf: "PR", propensao: "Provavelmente contrário", vies: "Direita liberal, lavajatista", fonte: "Assinou a PEC 12/2026", fonteUrl: "https://www.congressoemfoco.com.br/noticia/119260/40-senadores-assinam-pec-alternativa-ao-fim-da-escala-6x1-veja-lista" },
     { nome: "Carlos Portinho", partido: "PL", uf: "RJ", propensao: "Provavelmente contrário", vies: "Direita liberal, advogado empresarial", fonte: "Assinou a PEC 12/2026", fonteUrl: "https://www.congressoemfoco.com.br/noticia/119260/40-senadores-assinam-pec-alternativa-ao-fim-da-escala-6x1-veja-lista" },
     { nome: "Flávio Bolsonaro", partido: "PL", uf: "RJ", propensao: "Contrário", vies: "Direita bolsonarista, pré-candidato à Presidência, rosto público da PEC alternativa", fonte: "Assinou a PEC 12/2026 + protagonismo", fonteUrl: "https://www.cnnbrasil.com.br/blogs/caio-junqueira/politica/senadores-apresentam-pec-alternativa-a-da-camara-sobre-escala-6-x-1/" },
-    { nome: "Romário", partido: "PL", uf: "RJ", propensao: "Favorável", vies: "Direita populista, sensível à opinião pública; retirou assinatura da PEC 12 e anunciou voto pelo fim da 6x1", fonte: "Declaração pública", fonteUrl: "https://www.metropoles.com/brasil/sob-pressao-oposicao-perde-tres-assinaturas-em-pec-alternativa-a-6x1" },
+    { nome: "Romário", partido: "PL", uf: "RJ", propensao: "Favorável", vies: "Direita populista, sensível à opinião pública; pediu retirar assinatura da PEC 12 (Senado negou o pedido — regimento impede retirada pós-publicação) e declarou voto pelo fim da 6x1", fonte: "Declaração pública + negativa do Senado", fonteUrl: "https://www.poder360.com.br/poder-congresso/senado-barra-retirada-de-apoio-a-pec-alternativa-ao-fim-da-6-x-1/" },
     { nome: "Styvenson Valentim", partido: "Podemos", uf: "RN", propensao: "Provavelmente contrário", vies: "Moralista anticorrupção, voto errático", fonte: "Assinou a PEC 12/2026", fonteUrl: "https://www.congressoemfoco.com.br/noticia/119260/40-senadores-assinam-pec-alternativa-ao-fim-da-escala-6x1-veja-lista" },
     { nome: "Rogério Marinho", partido: "PL", uf: "RN", propensao: "Contrário", vies: "Direita liberal, líder da oposição, relator da reforma trabalhista de 2017, autor da PEC 12/2026", fonte: "Autor da PEC 12/2026", fonteUrl: "https://www12.senado.leg.br/noticias/materias/2026/05/28/rogerio-marinho-propoe-pec-que-flexibiliza-jornada-de-trabalho" },
     { nome: "Zenaide Maia", partido: "PSD", uf: "RN", propensao: "Provavelmente favorável", vies: "Centro-esquerda, médica, historicamente governista", fonte: "Inferido (perfil/alinhamento)" },
@@ -185,6 +185,22 @@ const DATA = {
 
   /* ===== painel de notícias ===== */
   noticias: [
+    {
+      titulo: "Semana 'decisiva' termina sem despacho e PEC 6x1 segue com calendário indefinido no Senado",
+      fonte: "CNN Brasil",
+      data: "12/06/2026",
+      url: "https://www.cnnbrasil.com.br/politica/senado-avanca-com-pautas-bomba-enquanto-6x1-segue-com-calendario-indefinido/",
+      resumo: "Semana de esforço concentrado (8-12/06) encerrou sem Alcolumbre despachar a PEC à CCJ; TV Senado indica que calendário de análise será definido na semana de 15/06.",
+      categoria: "Tramitação",
+    },
+    {
+      titulo: "Senado nega pedidos de Romário e Zequinha Marinho para retirar assinaturas da PEC alternativa",
+      fonte: "Poder360 · Metrópoles",
+      data: "10/06/2026",
+      url: "https://www.poder360.com.br/poder-congresso/senado-barra-retirada-de-apoio-a-pec-alternativa-ao-fim-da-6-x-1/",
+      resumo: "Regimento interno impede retirada de assinaturas após publicação da PEC. Romário e Zequinha permanecem formalmente como signatários da PEC 12/2026, apesar de declararem apoio ao fim da 6x1.",
+      categoria: "Tramitação",
+    },
     {
       titulo: "Câmara aprova em dois turnos o fim da escala 6x1 com jornada máxima de 40 horas",
       fonte: "Agência Câmara",
@@ -389,6 +405,13 @@ const DATA = {
         fonte: "Correio Braziliense",
         url: "https://www.correiobraziliense.com.br/politica/2026/06/7438084-alcolumbre-evita-acelerar-pec-do-fim-da-escala-6x1-no-senado.html",
       },
+      {
+        data: "12/06",
+        titulo: "Semana 'decisiva' encerra sem despacho; 6x1 com calendário indefinido",
+        citacao: "CNN Brasil apura que Senado avança com 'pautas-bomba' enquanto 6x1 segue sem data. TV Senado indica que calendário de análise deve ser definido na semana de 15/06",
+        fonte: "CNN Brasil · TV Senado",
+        url: "https://www.cnnbrasil.com.br/politica/senado-avanca-com-pautas-bomba-enquanto-6x1-segue-com-calendario-indefinido/",
+      },
     ],
     incentivos: [
       {
@@ -422,7 +445,7 @@ const DATA = {
   ofensiva: {
     dimensoes: ["Dureza retórica", "Artilharia técnica", "Ação política", "Peso institucional"],
     veredicto: "A <strong>CNI lidera a ofensiva</strong>. É a única entidade no nível máximo nas quatro dimensões: comanda o manifesto “Uma Carta para o Brasil que Acorda Cedo” (~3 mil entidades), bancou anúncios de página inteira dirigidos nominalmente aos senadores (09/06), detém o estudo macro de referência (custo de até R$ 267 bi/ano) e seu presidente, Ricardo Alban, fez em 10/06 a defesa pública mais explícita da PEC alternativa. A estratégia patronal é dual: <strong>CNI, Fiesp e CACB</strong> jogam o jogo institucional — desacelerar a PEC 221 nas comissões e emplacar a PEC 12/2026 —, <strong>Abrasel e Luciano Hang</strong> dão o choque retórico, e <strong>CNC e FecomercioSP</strong> fornecem a munição numérica. A Fiesp é a campeã do lobby presencial: levou comitiva a Alcolumbre em 26/05 para alongar a transição.",
-    nota: "Notas de 0 a 10 por dimensão — avaliação editorial do Radar sobre fatos reportados pela imprensa até 11/06/2026. Correção relevante: o Sebrae, por vezes listado no campo contrário, na verdade apoia o fim da 6x1 (Décio Lima: “modelo arcaico”).",
+    nota: "Notas de 0 a 10 por dimensão — avaliação editorial do Radar sobre fatos reportados pela imprensa até 12/06/2026. Correção relevante: o Sebrae, por vezes listado no campo contrário, na verdade apoia o fim da 6x1 (Décio Lima: “modelo arcaico”).",
     ranking: [
       {
         nome: "CNI",
@@ -555,7 +578,7 @@ const DATA = {
         ],
       },
     ],
-    disclaimer: "Análise estratégica editorial do Radar 6x1, baseada no texto aprovado pela Câmara em 27/05/2026 e na tramitação até 11/06/2026. Não constitui aconselhamento jurídico; decisões trabalhistas e tributárias exigem assessoria profissional sobre o caso concreto. Probabilidades dos cenários são estimativas editoriais.",
+    disclaimer: "Análise estratégica editorial do Radar 6x1, baseada no texto aprovado pela Câmara em 27/05/2026 e na tramitação até 12/06/2026. Não constitui aconselhamento jurídico; decisões trabalhistas e tributárias exigem assessoria profissional sobre o caso concreto. Probabilidades dos cenários são estimativas editoriais.",
   },
 
   /* ===== prediction markets ===== */
