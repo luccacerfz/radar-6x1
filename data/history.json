@@ -1301,6 +1301,16 @@
       },
       "evento": "Pacheco indicado relator com apoio bipartidário; Alcolumbre segura despacho à CCJ",
       "retroativo": false
+    },
+    {
+      "t": "2026-06-13T20:01:23-03:00",
+      "indice": 69,
+      "componentes": {
+        "noticias": 90,
+        "populacao": 65,
+        "senado": 55
+      },
+      "retroativo": false
     }
   ]
 }
