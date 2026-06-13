@@ -1,11 +1,11 @@
 /* ============================================================
    RADAR 6×1 — dados do painel
-   Última atualização: 11/06/2026
+   Última atualização: 13/06/2026
    Para atualizar o painel, edite apenas este arquivo.
    ============================================================ */
 
 const DATA = {
-  atualizadoEm: "2026-06-12",
+  atualizadoEm: "2026-06-13",
   totalFontes: "60+",
 
   /* ===== ficha da proposta ===== */
@@ -23,7 +23,7 @@ const DATA = {
     valor: 69,
     classificacao: "Quente",
     nota: "A discussão está quente e em fase decisiva: cobertura de imprensa no máximo histórico, apoio popular majoritário e um Senado moderadamente inclinado a aprovar — mas freado por Alcolumbre e pela ofensiva empresarial em torno de uma PEC alternativa.",
-    metodologia: "O índice vai de 0 (discussão fria, sem chance de avanço) a 100 (ebulição máxima, aprovação iminente). É a média ponderada de três componentes avaliados editorialmente a partir das fontes coletadas em 12/06/2026: volume de notícias (peso 30%) — densidade da cobertura na imprensa profissional, medida por eventos noticiados e análises de meta-cobertura como a do Observatório da Imprensa; favorabilidade da população (peso 35%) — média das pesquisas mais recentes (Quaest 68%, Datafolha/Abrasel 64%, AtlasIntel 56%), descontada a sensibilidade ao corte salarial; inclinação do Senado (peso 35%) — leitura qualitativa da correlação de forças: placar potencial favorável, custo eleitoral de votar contra, mas relatoria indefinida, presidência da Casa resistente à pressa e 40 assinaturas na PEC alternativa. Escala: 0–25 frio · 25–50 morno · 50–75 quente · 75–100 fervendo.",
+    metodologia: "O índice vai de 0 (discussão fria, sem chance de avanço) a 100 (ebulição máxima, aprovação iminente). É a média ponderada de três componentes avaliados editorialmente a partir das fontes coletadas em 13/06/2026: volume de notícias (peso 30%) — densidade da cobertura na imprensa profissional, medida por eventos noticiados e análises de meta-cobertura como a do Observatório da Imprensa; favorabilidade da população (peso 35%) — média das pesquisas mais recentes (Quaest 68%, Datafolha/Abrasel 64%, AtlasIntel 56%), descontada a sensibilidade ao corte salarial; inclinação do Senado (peso 35%) — leitura qualitativa da correlação de forças: placar potencial favorável, custo eleitoral de votar contra, mas relatoria indefinida, presidência da Casa resistente à pressa e 40 assinaturas na PEC alternativa. Escala: 0–25 frio · 25–50 morno · 50–75 quente · 75–100 fervendo.",
     componentes: [
       {
         nome: "Volume de notícias",
@@ -186,6 +186,22 @@ const DATA = {
   /* ===== painel de notícias ===== */
   noticias: [
     {
+      titulo: "Reunião de líderes prevista para terça-feira (16/06) pode definir relator da PEC 6x1",
+      fonte: "Correio Braziliense · Metrópoles",
+      data: "13/06/2026",
+      url: "https://www.correiobraziliense.com.br/politica/2026/06/7436233-reuniao-de-lideres-prevista-para-terca-pode-definir-relator-da-pec-6x1.html",
+      resumo: "Após encontro de Alcolumbre com interlocutores do governo sem resultado concreto, ele sinaliza reunião de líderes na semana de 16/06 que pode finalmente definir relator e calendário da PEC na CCJ.",
+      categoria: "Tramitação",
+    },
+    {
+      titulo: "Motta pede ao governo retirada de urgência do PL da escala 6x1 na Câmara",
+      fonte: "Poder360 · Congresso em Foco",
+      data: "10/06/2026",
+      url: "https://www.poder360.com.br/poder-congresso/motta-diz-que-pediu-ao-governo-para-retirar-urgencia-do-pl-da-6-x-1/",
+      resumo: "Com pauta da Câmara travada pelo PL da 6x1, Motta pediu ao Planalto retirada da urgência, argumentando que a PEC já foi votada. Governo recusou, vendo o trancamento como pressão para aprovação rápida no Senado.",
+      categoria: "Tramitação",
+    },
+    {
       titulo: "Semana 'decisiva' termina sem despacho e PEC 6x1 segue com calendário indefinido no Senado",
       fonte: "CNN Brasil",
       data: "12/06/2026",
@@ -234,14 +250,6 @@ const DATA = {
       categoria: "Empresas",
     },
     {
-      titulo: "CNC: fim da escala 6x1 pode custar R$ 358 bilhões por ano",
-      fonte: "CNC / Fenacor",
-      data: "mai/2026",
-      url: "https://fenacor.org.br/noticias/cnc-fim-da-escala-6x1-pode-gerar-aumento-nos",
-      resumo: "Estudo estima alta de 21% na folha, repasse de até 13% aos preços e perda de até 631 mil empregos formais em comércio e serviços.",
-      categoria: "Empresas",
-    },
-    {
       titulo: "Abrasel define texto do fim da escala 6x1 como “absurdo e inviável”",
       fonte: "Metrópoles",
       data: "mai/2026",
@@ -264,14 +272,6 @@ const DATA = {
       url: "https://www12.senado.leg.br/noticias/materias/2026/05/28/rogerio-marinho-propoe-pec-que-flexibiliza-jornada-de-trabalho",
       resumo: "PEC 12/2026 permite acordo individual de jornada com direitos proporcionais. Romário, Zequinha, Cleitinho e Otto Alencar depois tentaram retirar assinaturas.",
       categoria: "Tramitação",
-    },
-    {
-      titulo: "Fim da escala 6x1 é apoiado por 7 em cada 10 brasileiros, vê Quaest",
-      fonte: "Estado de Minas / Quaest",
-      data: "18/05/2026",
-      url: "https://www.em.com.br/economia/2026/05/7422027-fim-da-escala-6x1-e-apoiado-por-7-em-cada-10-brasileiros-ve-quaest.html",
-      resumo: "68% a favor e 22% contra. O apoio cai para 39% no cenário com redução salarial — hipótese vedada pelo texto aprovado.",
-      categoria: "Opinião pública",
     },
     {
       titulo: "Centrais sindicais denunciam à OIT ofensiva contra o fim da escala 6x1",
@@ -412,6 +412,13 @@ const DATA = {
         fonte: "CNN Brasil · TV Senado",
         url: "https://www.cnnbrasil.com.br/politica/senado-avanca-com-pautas-bomba-enquanto-6x1-segue-com-calendario-indefinido/",
       },
+      {
+        data: "13/06",
+        titulo: "Encontro com governo sem definição; reunião de líderes prevista para terça (16/06)",
+        citacao: "Após se reunir com interlocutores do governo sem indicar calendário nem relator, Alcolumbre sinaliza reunião de líderes para a semana de 16/06 que pode destravar a definição do relator na CCJ",
+        fonte: "Tribuna Online · Correio Braziliense",
+        url: "https://www.correiobraziliense.com.br/politica/2026/06/7436233-reuniao-de-lideres-prevista-para-terca-pode-definir-relator-da-pec-6x1.html",
+      },
     ],
     incentivos: [
       {
@@ -445,7 +452,7 @@ const DATA = {
   ofensiva: {
     dimensoes: ["Dureza retórica", "Artilharia técnica", "Ação política", "Peso institucional"],
     veredicto: "A <strong>CNI lidera a ofensiva</strong>. É a única entidade no nível máximo nas quatro dimensões: comanda o manifesto “Uma Carta para o Brasil que Acorda Cedo” (~3 mil entidades), bancou anúncios de página inteira dirigidos nominalmente aos senadores (09/06), detém o estudo macro de referência (custo de até R$ 267 bi/ano) e seu presidente, Ricardo Alban, fez em 10/06 a defesa pública mais explícita da PEC alternativa. A estratégia patronal é dual: <strong>CNI, Fiesp e CACB</strong> jogam o jogo institucional — desacelerar a PEC 221 nas comissões e emplacar a PEC 12/2026 —, <strong>Abrasel e Luciano Hang</strong> dão o choque retórico, e <strong>CNC e FecomercioSP</strong> fornecem a munição numérica. A Fiesp é a campeã do lobby presencial: levou comitiva a Alcolumbre em 26/05 para alongar a transição.",
-    nota: "Notas de 0 a 10 por dimensão — avaliação editorial do Radar sobre fatos reportados pela imprensa até 12/06/2026. Correção relevante: o Sebrae, por vezes listado no campo contrário, na verdade apoia o fim da 6x1 (Décio Lima: “modelo arcaico”).",
+    nota: "Notas de 0 a 10 por dimensão — avaliação editorial do Radar sobre fatos reportados pela imprensa até 13/06/2026. Correção relevante: o Sebrae, por vezes listado no campo contrário, na verdade apoia o fim da 6x1 (Décio Lima: “modelo arcaico”).",
     ranking: [
       {
         nome: "CNI",
@@ -578,7 +585,7 @@ const DATA = {
         ],
       },
     ],
-    disclaimer: "Análise estratégica editorial do Radar 6x1, baseada no texto aprovado pela Câmara em 27/05/2026 e na tramitação até 12/06/2026. Não constitui aconselhamento jurídico; decisões trabalhistas e tributárias exigem assessoria profissional sobre o caso concreto. Probabilidades dos cenários são estimativas editoriais.",
+    disclaimer: "Análise estratégica editorial do Radar 6x1, baseada no texto aprovado pela Câmara em 27/05/2026 e na tramitação até 13/06/2026. Não constitui aconselhamento jurídico; decisões trabalhistas e tributárias exigem assessoria profissional sobre o caso concreto. Probabilidades dos cenários são estimativas editoriais.",
   },
 
   /* ===== prediction markets ===== */
