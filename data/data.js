@@ -1,11 +1,11 @@
 /* ============================================================
    RADAR 6×1 — dados do painel
-   Última atualização: 13/06/2026
+   Última atualização: 14/06/2026
    Para atualizar o painel, edite apenas este arquivo.
    ============================================================ */
 
 const DATA = {
-  atualizadoEm: "2026-06-13",
+  atualizadoEm: "2026-06-14",
   totalFontes: "60+",
 
   /* ===== ficha da proposta ===== */
@@ -186,6 +186,22 @@ const DATA = {
   /* ===== painel de notícias ===== */
   noticias: [
     {
+      titulo: "Alcolumbre tenta convencer Pacheco a ser relator da PEC 6x1; Pacheco hesita",
+      fonte: "CNN Brasil · Caio Junqueira / Isabel Mega",
+      data: "13/06/2026",
+      url: "https://www.cnnbrasil.com.br/blogs/caio-junqueira/politica/alcolumbre-tenta-convencer-pacheco-a-relatar-pec-6x1-dizem-interlocutores/",
+      resumo: "Alcolumbre mira Pacheco para a relatoria na CCJ como estratégia de reaproximação com Lula após a crise do STF. Pacheco — não candidato em outubro, perfil moderado aceito por governo e oposição — hesita em aceitar a missão.",
+      categoria: "Tramitação",
+    },
+    {
+      titulo: "Oposição avalia 'plano B' à PEC alternativa e centrais sindicais convocam sessão temática para 24/06",
+      fonte: "CNN Brasil · CTB",
+      data: "13/06/2026",
+      url: "https://www.cnnbrasil.com.br/politica/oposicao-avalia-plano-b-a-pec-alternativa-sobre-fim-da-6x1-no-senado/",
+      resumo: "Com a PEC 12/2026 fragilizada por deserções, a oposição avalia apresentar emendas ao texto da Câmara como nova estratégia. Em paralelo, centrais sindicais convocam sessão temática no plenário do Senado para 24 de junho.",
+      categoria: "Tramitação",
+    },
+    {
       titulo: "Reunião de líderes prevista para terça-feira (16/06) pode definir relator da PEC 6x1",
       fonte: "Correio Braziliense · Metrópoles",
       data: "13/06/2026",
@@ -250,28 +266,12 @@ const DATA = {
       categoria: "Empresas",
     },
     {
-      titulo: "Abrasel define texto do fim da escala 6x1 como “absurdo e inviável”",
-      fonte: "Metrópoles",
-      data: "mai/2026",
-      url: "https://www.metropoles.com/negocios/abrasel-define-texto-do-fim-da-escala-6x1-como-absurdo-e-inviavel",
-      resumo: "Setor de bares e restaurantes prevê alta de ~7% nos preços e cita 500 mil vagas já abertas; acusa tramitação “açodada por interesse eleitoral”.",
-      categoria: "Empresas",
-    },
-    {
       titulo: "Carta de entidades empresariais mira PEC que extingue escala 6x1",
       fonte: "Migalhas",
       data: "09/06/2026",
       url: "https://www.migalhas.com.br/quentes/457665/carta-de-entidades-empresariais-mira-pec-que-extingue-escala-6x1",
       resumo: "Manifesto “Uma Carta para o Brasil que Acorda Cedo” reúne ~3 mil entidades (CNI, CNC, CNA, CNT, Fiesp) com anúncios de página inteira dirigidos aos senadores.",
       categoria: "Empresas",
-    },
-    {
-      titulo: "Rogério Marinho propõe PEC que flexibiliza jornada de trabalho",
-      fonte: "Agência Senado",
-      data: "28/05/2026",
-      url: "https://www12.senado.leg.br/noticias/materias/2026/05/28/rogerio-marinho-propoe-pec-que-flexibiliza-jornada-de-trabalho",
-      resumo: "PEC 12/2026 permite acordo individual de jornada com direitos proporcionais. Romário, Zequinha, Cleitinho e Otto Alencar depois tentaram retirar assinaturas.",
-      categoria: "Tramitação",
     },
     {
       titulo: "Centrais sindicais denunciam à OIT ofensiva contra o fim da escala 6x1",
@@ -418,6 +418,13 @@ const DATA = {
         citacao: "Após se reunir com interlocutores do governo sem indicar calendário nem relator, Alcolumbre sinaliza reunião de líderes para a semana de 16/06 que pode destravar a definição do relator na CCJ",
         fonte: "Tribuna Online · Correio Braziliense",
         url: "https://www.correiobraziliense.com.br/politica/2026/06/7436233-reuniao-de-lideres-prevista-para-terca-pode-definir-relator-da-pec-6x1.html",
+      },
+      {
+        data: "13/06",
+        titulo: "Articula Pacheco para a relatoria como 'moeda' de reaproximação com Lula",
+        citacao: "Segundo interlocutores, Alcolumbre quer Pacheco — não candidato em outubro, moderado, com trânsito em governo, oposição e setor produtivo — como relator na CCJ; a indicação seria também a 'moeda' da recomposição com o Planalto. Pacheco hesita.",
+        fonte: "CNN Brasil · Caio Junqueira / Isabel Mega",
+        url: "https://www.cnnbrasil.com.br/blogs/caio-junqueira/politica/alcolumbre-tenta-convencer-pacheco-a-relatar-pec-6x1-dizem-interlocutores/",
       },
     ],
     incentivos: [
@@ -598,6 +605,6 @@ const DATA = {
         url: "https://manifold.markets/FranklinBaldo/will-brazil-implement-a-fourday-wor",
       },
     ],
-    nota: "<strong>Não existe mercado de previsão ativo e específico sobre a aprovação da PEC no Senado</strong> (verificado em 11/06/2026). Polymarket e Kalshi estão bloqueados no Brasil desde maio/2026 por resolução do CMN e não listam o tema; no Metaculus, duas perguntas sobre o fim da 6x1 expiraram antes da tramitação atual (a de 2024 resolveu NÃO com previsão final de 11%). O mercado tangencial mais próximo está acima.",
+    nota: "<strong>Não existe mercado de previsão ativo e específico sobre a aprovação da PEC no Senado</strong> (verificado em 14/06/2026). Polymarket e Kalshi estão bloqueados no Brasil desde maio/2026 por resolução do CMN e não listam o tema; no Metaculus, duas perguntas sobre o fim da 6x1 expiraram antes da tramitação atual (a de 2024 resolveu NÃO com previsão final de 11%). O mercado tangencial mais próximo está acima.",
   },
 };
