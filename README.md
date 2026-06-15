@@ -30,15 +30,15 @@ Site 100% estático, sem build. Para atualizar o painel manualmente, edite `data
 
 ## Atualização automática (100% na nuvem)
 
-Três rotinas de cloud agents (Claude Code Routines) mantêm o painel sem nenhuma máquina local ligada — cada push na `main` dispara redeploy automático no Vercel:
+Uma rotina de cloud agent (Claude Code Routine) mantém o painel sem nenhuma máquina local ligada — cada push na `main` dispara redeploy automático no Vercel:
 
 | Rotina | Cron (UTC) | O que faz |
 |---|---|---|
-| `Radar 6x1 — leitura :00` | `0 * * * *` | Pesquisa notícias, recalcula o índice e adiciona um ponto em `data/history.json` |
-| `Radar 6x1 — leitura :30` | `30 * * * *` | Idem, defasada 30 min (juntas = leitura a cada 30 minutos) |
-| `Radar 6x1 — atualização profunda diária` | `0 9 * * *` | Revisa todo o `data/data.js`: ficha, senadores, sumários, notícias, pesquisas, zoom Alcolumbre, ranking empresarial e prediction markets |
+| `Radar 6x1 — monitor diário (só avisa em mudança)` | `0 9 * * *` | Verifica a PEC uma vez por dia. **Só commita/publica quando há mudança real** (relator, despacho na CCJ, votação, mudança de posição de senador, nova pesquisa, fato novo do lobby, ou índice variando ≥3 pontos), com commit marcado `[ALERTA]`. Sem novidade, não faz nada. |
 
-Além disso, o navegador do visitante busca em tempo real: últimas notícias e volume de cobertura (GDELT, a cada 5/15 min) e probabilidade do Manifold Markets (a cada 10 min). Gerenciamento das rotinas: https://claude.ai/code/routines
+Como **commit = mudança real**, basta dar *Watch* no repositório no GitHub para receber no celular um aviso apenas quando algo de fato muda — e nada nos dias sem novidade.
+
+As duas rotinas de leitura a cada 30 minutos foram desativadas para não gerar notificação a cada meia hora. Além disso, o navegador do visitante busca em tempo real: últimas notícias e volume de cobertura (GDELT, a cada 5/15 min) e probabilidade do Manifold Markets (a cada 10 min). Gerenciamento das rotinas: https://claude.ai/code/routines
 
 ## Aviso
 

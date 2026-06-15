@@ -114,8 +114,8 @@
     const ultimo = pts[pts.length - 1];
     $("#grafico-status").innerHTML = `<span class="live-dot-mini"></span> ${ultimo.indice}/100 · ${tempoRelativo(ultimo.t)}`;
     $("#grafico-legenda").textContent = ultimo.evento
-      ? `Última leitura: ${ultimo.evento}`
-      : "Pontos com contorno são marcos editoriais; a linha avança a cada leitura do robô (30 em 30 min).";
+      ? `Última mudança registrada: ${ultimo.evento}`
+      : "Pontos com contorno são marcos editoriais; a linha avança quando o monitor diário detecta uma mudança real.";
     $("#ultima-leitura").textContent = new Date(ultimo.t).toLocaleString("pt-BR", {
       day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit",
     });
