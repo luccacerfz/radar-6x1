@@ -2224,6 +2224,16 @@
       },
       "evento": "Motta pauta PL do governo (jornada 40h/5x2) na Câmara para 16/06 — pressão sobre Senado; PEC 221 segue bloqueada por Alcolumbre",
       "retroativo": false
+    },
+    {
+      "t": "2026-06-15T18:01:31-03:00",
+      "indice": 69,
+      "componentes": {
+        "noticias": 90,
+        "populacao": 65,
+        "senado": 55
+      },
+      "retroativo": false
     }
   ]
 }
