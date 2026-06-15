@@ -1852,6 +1852,16 @@
         "senado": 55
       },
       "retroativo": false
+    },
+    {
+      "t": "2026-06-14T23:37:12-03:00",
+      "indice": 69,
+      "componentes": {
+        "noticias": 90,
+        "populacao": 65,
+        "senado": 55
+      },
+      "retroativo": false
     }
   ]
 }
