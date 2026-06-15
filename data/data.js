@@ -1,11 +1,11 @@
 /* ============================================================
    RADAR 6×1 — dados do painel
-   Última atualização: 14/06/2026
+   Última atualização: 15/06/2026
    Para atualizar o painel, edite apenas este arquivo.
    ============================================================ */
 
 const DATA = {
-  atualizadoEm: "2026-06-14",
+  atualizadoEm: "2026-06-15",
   totalFontes: "60+",
 
   /* ===== ficha da proposta ===== */
@@ -186,6 +186,22 @@ const DATA = {
   /* ===== painel de notícias ===== */
   noticias: [
     {
+      titulo: "Lula parte ao G7 na França sem reunião com Alcolumbre; PEC 6x1 aguarda retorno do presidente",
+      fonte: "Metrópoles · CNN Brasil · O Tempo",
+      data: "14/06/2026",
+      url: "https://www.metropoles.com/colunas/igor-gadelha/aliados-apostam-em-encontro-de-lula-e-alcolumbre-antes-do-g7",
+      resumo: "Lula embarcou para a Cúpula do G7 em Évian-les-Bains (França) sem se reunir com Alcolumbre — a condição que o presidente do Senado havia imposto para destravar a PEC. Ministro Guimarães tentou a aproximação nos bastidores, mas o encontro não se concretizou antes do embarque. Reunião e despacho à CCJ devem aguardar o retorno de Lula, após 17/06.",
+      categoria: "Tramitação",
+    },
+    {
+      titulo: "Motta designa Leo Prates relator do PL do governo sobre 6x1; urgência mantida enquanto Senado não vota",
+      fonte: "CNN Brasil · Poder360 · Congresso em Foco",
+      data: "11/06/2026",
+      url: "https://www.cnnbrasil.com.br/politica/hugo-anuncia-leo-prates-como-relator-do-pl-sobre-6x1-enviado-pelo-governo/",
+      resumo: "Hugo Motta designou Leo Prates (Republicanos-BA) — o mesmo relator da PEC na Câmara — para relatar o PL 1.838/2026 enviado pelo Executivo em regime de urgência. Em vez de retirar a urgência, Motta optou por segurar o PL ativo como alavanca de pressão sobre o Senado. O PL trava a pauta da Câmara enquanto a PEC não for votada.",
+      categoria: "Tramitação",
+    },
+    {
       titulo: "Alcolumbre tenta convencer Pacheco a ser relator da PEC 6x1; Pacheco hesita",
       fonte: "CNN Brasil · Caio Junqueira / Isabel Mega",
       data: "13/06/2026",
@@ -256,22 +272,6 @@ const DATA = {
       url: "https://www.cnnbrasil.com.br/politica/rodrigo-pacheco-ganha-apoio-da-oposicao-para-relatar-pec-da-6x1/",
       resumo: "PL e oposição transmitiram a Alcolumbre preferência por Pacheco; Gazeta do Povo apura que ele tende a recusar. Omar Aziz também é cotado.",
       categoria: "Tramitação",
-    },
-    {
-      titulo: "CNI: aprovada pela Câmara, PEC que reduz jornada é “inadequada e inoportuna”",
-      fonte: "Portal da Indústria",
-      data: "28/05/2026",
-      url: "https://noticias.portaldaindustria.com.br/posicionamentos/cni-aprovada-pela-camara-pec-que-reduz-jornada-e-inadequada-e-inoportuna/",
-      resumo: "Indústria pede que o Senado não vote “sob pressão eleitoral” e defende negociação coletiva com agenda de produtividade como contrapartida.",
-      categoria: "Empresas",
-    },
-    {
-      titulo: "Carta de entidades empresariais mira PEC que extingue escala 6x1",
-      fonte: "Migalhas",
-      data: "09/06/2026",
-      url: "https://www.migalhas.com.br/quentes/457665/carta-de-entidades-empresariais-mira-pec-que-extingue-escala-6x1",
-      resumo: "Manifesto “Uma Carta para o Brasil que Acorda Cedo” reúne ~3 mil entidades (CNI, CNC, CNA, CNT, Fiesp) com anúncios de página inteira dirigidos aos senadores.",
-      categoria: "Empresas",
     },
     {
       titulo: "Centrais sindicais denunciam à OIT ofensiva contra o fim da escala 6x1",
@@ -425,6 +425,13 @@ const DATA = {
         citacao: "Segundo interlocutores, Alcolumbre quer Pacheco — não candidato em outubro, moderado, com trânsito em governo, oposição e setor produtivo — como relator na CCJ; a indicação seria também a 'moeda' da recomposição com o Planalto. Pacheco hesita.",
         fonte: "CNN Brasil · Caio Junqueira / Isabel Mega",
         url: "https://www.cnnbrasil.com.br/blogs/caio-junqueira/politica/alcolumbre-tenta-convencer-pacheco-a-relatar-pec-6x1-dizem-interlocutores/",
+      },
+      {
+        data: "14/06",
+        titulo: "Lula parte ao G7 sem reunião com Alcolumbre; condição continua pendente",
+        citacao: "Lula embarca para a França (G7, Évian-les-Bains, 15–17/06) sem cumprir a reunião exigida por Alcolumbre como pré-condição para destravar a PEC. Ministro Guimarães atuou como articulador nos bastidores; aliados petistas apostavam no encontro antes do embarque, mas não ocorreu. Reunião e despacho à CCJ devem aguardar o retorno de Lula",
+        fonte: "Metrópoles · CNN Brasil · PlatôBR",
+        url: "https://www.metropoles.com/colunas/igor-gadelha/aliados-apostam-em-encontro-de-lula-e-alcolumbre-antes-do-g7",
       },
     ],
     incentivos: [
@@ -605,6 +612,6 @@ const DATA = {
         url: "https://manifold.markets/FranklinBaldo/will-brazil-implement-a-fourday-wor",
       },
     ],
-    nota: "<strong>Não existe mercado de previsão ativo e específico sobre a aprovação da PEC no Senado</strong> (verificado em 14/06/2026). Polymarket e Kalshi estão bloqueados no Brasil desde maio/2026 por resolução do CMN e não listam o tema; no Metaculus, duas perguntas sobre o fim da 6x1 expiraram antes da tramitação atual (a de 2024 resolveu NÃO com previsão final de 11%). O mercado tangencial mais próximo está acima.",
+    nota: "<strong>Não existe mercado de previsão ativo e específico sobre a aprovação da PEC no Senado</strong> (verificado em 15/06/2026). Polymarket e Kalshi estão bloqueados no Brasil desde maio/2026 por resolução do CMN e não listam o tema; no Metaculus, duas perguntas sobre o fim da 6x1 expiraram antes da tramitação atual (a de 2024 resolveu NÃO com previsão final de 11%). O mercado tangencial mais próximo está acima.",
   },
 };
