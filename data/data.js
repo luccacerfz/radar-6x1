@@ -1,11 +1,11 @@
 /* ============================================================
    RADAR 6×1 — dados do painel
-   Última atualização: 15/06/2026
+   Última atualização: 16/06/2026
    Para atualizar o painel, edite apenas este arquivo.
    ============================================================ */
 
 const DATA = {
-  atualizadoEm: "2026-06-15",
+  atualizadoEm: "2026-06-16",
   totalFontes: "60+",
 
   /* ===== ficha da proposta ===== */
@@ -186,6 +186,22 @@ const DATA = {
   /* ===== painel de notícias ===== */
   noticias: [
     {
+      titulo: "Câmara vota PL 1838 nesta terça para destravar pauta e pressionar Senado",
+      fonte: "Metrópoles · Portal da Câmara",
+      data: "16/06/2026",
+      url: "https://www.metropoles.com/brasil/motta-vota-pl-do-6x1-na-terca-e-empurra-debate-para-alcolumbre",
+      resumo: "Hugo Motta convocou reunião de líderes e pautou o PL 1.838/2026 — mesmo texto da PEC aprovada em maio — como item único do plenário desta terça-feira. A manobra destrava a pauta da Câmara e, nas palavras de Motta, 'empurra o debate para Alcolumbre'. O Governo Lula se recusou a retirar a urgência do PL, mantendo-o ativo como alavanca sobre o Senado.",
+      categoria: "Tramitação",
+    },
+    {
+      titulo: "Articulador de Lula se reúne com Alcolumbre; encontro direto aguarda retorno do G7",
+      fonte: "CNN Brasil (Bastidores CNN) · CartaCapital",
+      data: "15/06/2026",
+      url: "https://www.youtube.com/watch?v=TvYXAHUU4aA",
+      resumo: "O ministro Guimarães visitou Alcolumbre para tratar da PEC 6x1, afirmando dialogar 'diariamente' com o senador e estimando o despacho à CCJ 'na semana que vem, no máximo'. O encontro direto Lula–Alcolumbre — condição do presidente do Senado para destravar a PEC — ainda não foi marcado; Lula resiste ao encontro, segundo CNN Brasil. Líderes trabalham para reabrir o diálogo.",
+      categoria: "Tramitação",
+    },
+    {
       titulo: "Lula parte ao G7 na França sem reunião com Alcolumbre; PEC 6x1 aguarda retorno do presidente",
       fonte: "Metrópoles · CNN Brasil · O Tempo",
       data: "14/06/2026",
@@ -247,22 +263,6 @@ const DATA = {
       data: "10/06/2026",
       url: "https://www.poder360.com.br/poder-congresso/senado-barra-retirada-de-apoio-a-pec-alternativa-ao-fim-da-6-x-1/",
       resumo: "Regimento interno impede retirada de assinaturas após publicação da PEC. Romário e Zequinha permanecem formalmente como signatários da PEC 12/2026, apesar de declararem apoio ao fim da 6x1.",
-      categoria: "Tramitação",
-    },
-    {
-      titulo: "Câmara aprova em dois turnos o fim da escala 6x1 com jornada máxima de 40 horas",
-      fonte: "Agência Câmara",
-      data: "27/05/2026",
-      url: "https://www.camara.leg.br/noticias/1277141-camara-aprova-em-dois-turnos-fim-da-escala-6x1-com-jornada-maxima-de-40-horas-semanais/",
-      resumo: "Placar esmagador: 472 a 22 no 1º turno e 461 a 19 no 2º. Texto prevê 5 dias de trabalho, 2 de descanso e transição de 14 meses, sem redução salarial.",
-      categoria: "Tramitação",
-    },
-    {
-      titulo: "PEC da escala 6x1 não irá diretamente para o plenário do Senado, diz Davi",
-      fonte: "Agência Senado",
-      data: "02/06/2026",
-      url: "https://www12.senado.leg.br/noticias/materias/2026/06/02/pec-da-escala-6x1-nao-ira-diretamente-para-o-plenario-do-senado-diz-davi",
-      resumo: "Alcolumbre determina passagem pela CCJ e defende “melhorar” o texto, frustrando a pressão do governo por votação antes do recesso.",
       categoria: "Tramitação",
     },
     {
@@ -432,6 +432,13 @@ const DATA = {
         citacao: "Lula embarca para a França (G7, Évian-les-Bains, 15–17/06) sem cumprir a reunião exigida por Alcolumbre como pré-condição para destravar a PEC. Ministro Guimarães atuou como articulador nos bastidores; aliados petistas apostavam no encontro antes do embarque, mas não ocorreu. Reunião e despacho à CCJ devem aguardar o retorno de Lula",
         fonte: "Metrópoles · CNN Brasil · PlatôBR",
         url: "https://www.metropoles.com/colunas/igor-gadelha/aliados-apostam-em-encontro-de-lula-e-alcolumbre-antes-do-g7",
+      },
+      {
+        data: "15-16/06",
+        titulo: "Articulador do Planalto encontra Alcolumbre; Câmara vota PL 1838 aumentando pressão",
+        citacao: "Ministro Guimarães visita Alcolumbre e afirma dialogar 'diariamente' com ele, estimando despacho à CCJ 'na semana que vem, no máximo'. Câmara pauta PL 1.838 como item único para destravar plenário — Motta: 'empurra debate para Alcolumbre'. Encontro Lula-Alcolumbre aguarda retorno do G7 (após 17/06); Lula resiste ao encontro direto",
+        fonte: "CNN Brasil · Metrópoles · CartaCapital",
+        url: "https://www.youtube.com/watch?v=TvYXAHUU4aA",
       },
     ],
     incentivos: [
