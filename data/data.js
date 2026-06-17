@@ -1,11 +1,11 @@
 /* ============================================================
    RADAR 6×1 — dados do painel
-   Última atualização: 16/06/2026
+   Última atualização: 17/06/2026
    Para atualizar o painel, edite apenas este arquivo.
    ============================================================ */
 
 const DATA = {
-  atualizadoEm: "2026-06-16",
+  atualizadoEm: "2026-06-17",
   totalFontes: "60+",
 
   /* ===== ficha da proposta ===== */
@@ -186,6 +186,14 @@ const DATA = {
   /* ===== painel de notícias ===== */
   noticias: [
     {
+      titulo: "Acordo Lula-Motta: governo retira urgência do PL 1838 e desobstrui a Câmara",
+      fonte: "Metrópoles · Agência Brasil · JOTA · Brasil 247",
+      data: "16/06/2026",
+      url: "https://www.metropoles.com/brasil/acordo-com-motta-lula-retira-urgencia-da-6x1-para-conter-pautas-bomba",
+      resumo: "Em reunião de líderes na tarde de terça, o governo reverteu sua posição e retirou a urgência constitucional do PL 1.838/2026, liberando a pauta da Câmara. O movimento faz parte de um acordo com Motta para barrar 'pautas-bomba' vindas do Senado com impacto estimado de até R$ 215 bi (incluindo uso do Fundo Social do pré-sal para dívidas rurais). A retirada esvazia o principal instrumento imediato de pressão do Executivo sobre Alcolumbre, que segue sem despachar a PEC à CCJ. Senador Lindbergh Farias (PT-RJ) classificou a decisão como 'erro grave'; aliados avaliam que a alavanca sobre o Senado perdeu força.",
+      categoria: "Tramitação",
+    },
+    {
       titulo: "Câmara vota PL 1838 nesta terça para destravar pauta e pressionar Senado",
       fonte: "Metrópoles · Portal da Câmara",
       data: "16/06/2026",
@@ -272,14 +280,6 @@ const DATA = {
       url: "https://www.cnnbrasil.com.br/politica/rodrigo-pacheco-ganha-apoio-da-oposicao-para-relatar-pec-da-6x1/",
       resumo: "PL e oposição transmitiram a Alcolumbre preferência por Pacheco; Gazeta do Povo apura que ele tende a recusar. Omar Aziz também é cotado.",
       categoria: "Tramitação",
-    },
-    {
-      titulo: "Centrais sindicais denunciam à OIT ofensiva contra o fim da escala 6x1",
-      fonte: "Vermelho",
-      data: "10/06/2026",
-      url: "https://vermelho.org.br/2026/06/10/centrais-sindicais-denunciam-a-oit-ofensiva-contra-o-fim-da-escala-6x1/",
-      resumo: "CUT, Força Sindical, UGT e CTB acusam “ofensiva patronal” e anunciam pressão sobre senadores nos estados pela votação antes do recesso.",
-      categoria: "Trabalhadores",
     },
   ],
 
@@ -439,6 +439,13 @@ const DATA = {
         citacao: "Ministro Guimarães visita Alcolumbre e afirma dialogar 'diariamente' com ele, estimando despacho à CCJ 'na semana que vem, no máximo'. Câmara pauta PL 1.838 como item único para destravar plenário — Motta: 'empurra debate para Alcolumbre'. Encontro Lula-Alcolumbre aguarda retorno do G7 (após 17/06); Lula resiste ao encontro direto",
         fonte: "CNN Brasil · Metrópoles · CartaCapital",
         url: "https://www.youtube.com/watch?v=TvYXAHUU4aA",
+      },
+      {
+        data: "16/06",
+        titulo: "Governo recua: retira urgência do PL 1838 em acordo com Motta para conter pautas-bomba",
+        citacao: "Em reunião de líderes na tarde de terça, o governo abriu mão da urgência constitucional do PL 1.838 — o principal instrumento de pressão imediata sobre o Senado — para garantir que Motta bloqueie as 'pautas-bomba' enviadas pela Câmara Alta (impacto de até R$ 215 bi). Lindbergh (PT-RJ): 'erro grave'. Com a alavanca esvaziada, Alcolumbre ganha mais fôlego para administrar o ritmo da PEC sem custo imediato. PEC 221 segue sem despacho à CCJ; relator não definido; Lula retorna do G7 em 18/06.",
+        fonte: "Metrópoles · Agência Brasil · JOTA",
+        url: "https://www.metropoles.com/brasil/acordo-com-motta-lula-retira-urgencia-da-6x1-para-conter-pautas-bomba",
       },
     ],
     incentivos: [
