@@ -1,11 +1,11 @@
 /* ============================================================
    RADAR 6×1 — dados do painel
-   Última atualização: 17/06/2026
+   Última atualização: 18/06/2026
    Para atualizar o painel, edite apenas este arquivo.
    ============================================================ */
 
 const DATA = {
-  atualizadoEm: "2026-06-17",
+  atualizadoEm: "2026-06-18",
   totalFontes: "60+",
 
   /* ===== ficha da proposta ===== */
@@ -81,7 +81,7 @@ const DATA = {
     { nome: "Weverton", partido: "PDT", uf: "MA", propensao: "Provavelmente favorável", vies: "Trabalhista (PDT); pediu sessão temática sobre a PEC", fonte: "Atuação pública", fonteUrl: "https://www12.senado.leg.br/noticias/materias/2026/05/28/apos-aprovacao-na-camara-senado-analisara-fim-da-escala-6x1" },
     { nome: "Carlos Viana", partido: "PSD", uf: "MG", propensao: "Provavelmente contrário", vies: "Direita evangélica, ex-PL", fonte: "Assinou a PEC 12/2026", fonteUrl: "https://www.congressoemfoco.com.br/noticia/119260/40-senadores-assinam-pec-alternativa-ao-fim-da-escala-6x1-veja-lista" },
     { nome: "Cleitinho", partido: "Republicanos", uf: "MG", propensao: "Favorável", vies: "Populista antissistema, sensível à pressão popular; retirou assinatura da PEC 12 e pediu votação rápida", fonte: "Declaração pública", fonteUrl: "https://www.metropoles.com/brasil/sob-pressao-oposicao-perde-tres-assinaturas-em-pec-alternativa-a-6x1" },
-    { nome: "Rodrigo Pacheco", partido: "PSB", uf: "MG", propensao: "Provavelmente favorável", vies: "Centro, ex-presidente do Senado, pré-candidato em MG com apoio de Lula; cotado para relator", fonte: "Apoio sinalizado", fonteUrl: "https://www.congressoemfoco.com.br/noticia/119458/pec-do-fim-da-escala-6x1-entra-em-semana-decisiva-no-senado" },
+    { nome: "Rodrigo Pacheco", partido: "PSB", uf: "MG", propensao: "Provavelmente favorável", vies: "Centro, ex-presidente do Senado, pré-candidato em MG com apoio de Lula; declinou ser relator em 17/06 — 'não serei o relator dessa matéria'", fonte: "Declaração pública", fonteUrl: "https://www.correiobraziliense.com.br/politica/2026/06/7442995-pacheco-descarta-relatar-pec-do-fim-da-escala-6x1-no-senado.html" },
     { nome: "Nelsinho Trad", partido: "PSD", uf: "MS", propensao: "Provavelmente contrário", vies: "Centro fisiológico", fonte: "Assinou a PEC 12/2026", fonteUrl: "https://www.congressoemfoco.com.br/noticia/119260/40-senadores-assinam-pec-alternativa-ao-fim-da-escala-6x1-veja-lista" },
     { nome: "Soraya Thronicke", partido: "PSB", uf: "MS", propensao: "Indeciso/Sem posição", vies: "Liberal errática, ex-União Brasil; partido atual é favorável", fonte: "Sem declaração; sinais conflitantes" },
     { nome: "Tereza Cristina", partido: "PP", uf: "MS", propensao: "Provavelmente contrário", vies: "Direita, agronegócio, ex-ministra da Agricultura de Bolsonaro", fonte: "Assinou a PEC 12/2026", fonteUrl: "https://www.congressoemfoco.com.br/noticia/119260/40-senadores-assinam-pec-alternativa-ao-fim-da-escala-6x1-veja-lista" },
@@ -134,10 +134,10 @@ const DATA = {
 
   /* ===== debates no senado (máx. 250 palavras) ===== */
   debatesSenado: {
-    contagemPalavras: 243,
+    contagemPalavras: 241,
     fontes: "Agência Senado, CNN Brasil, Gazeta do Povo, Correio Braziliense, Poder360, Metrópoles",
     paragrafos: [
-      "Aprovada pela Câmara em dois turnos no dia 27 de maio (472 a 22 e 461 a 19), a PEC 221/2019 parou na mesa de Davi Alcolumbre (União-AP), que recusou votação imediata — “seria muito razoável se o Senado pudesse melhorar um texto com essa importância” — e deve despachá-la à CCJ de Otto Alencar (PSD-BA), que promete parecer em três ou quatro semanas. O relator ainda não foi definido; Rodrigo Pacheco, Omar Aziz e Eduardo Braga são os mais cotados.",
+      "Aprovada pela Câmara em dois turnos no dia 27 de maio (472 a 22 e 461 a 19), a PEC 221/2019 parou na mesa de Davi Alcolumbre (União-AP), que recusou votação imediata — “seria muito razoável se o Senado pudesse melhorar um texto com essa importância” — e deve despachá-la à CCJ de Otto Alencar (PSD-BA), que promete parecer em três ou quatro semanas. O relator segue indefinido: Pacheco descartou a função em 17/06 (“não serei o relator dessa matéria”); Omar Aziz e Camilo Santana são agora os mais cotados.",
       "O debate de mudança tem quatro eixos: alongar a transição de 14 meses prevista no texto (42 horas após dois meses, 40 horas após mais um ano); criar exceções para setores de operação contínua — saúde, segurança, transporte, hotelaria e comércio —, preservando a escala 12x36 por acordo coletivo; compensar micro e pequenas empresas, em diálogo com a equipe econômica; e ampliar o espaço da negociação coletiva. Oriovisto Guimarães (PSDB-PR) chama o texto de “açodado”, com “efeito devastador” sobre escolas e prefeituras.",
       "No campo oposto, Rogério Marinho (PL-RN) protocolou a PEC 12/2026, do “trabalho flexível”, com cerca de 40 assinaturas: permite acordos individuais de jornada e não extingue a 6x1. A adesão é frágil — Romário, Zequinha Marinho, Cleitinho e o próprio Otto Alencar tentaram retirar a assinatura. Na direção contrária, Paulo Paim (PT-RS) defende 36 horas, e Randolfe Rodrigues (PT-AP) e Humberto Costa (PT-PE) querem votação antes do recesso de julho — qualquer mudança de mérito devolve a PEC à Câmara.",
     ],
@@ -164,7 +164,7 @@ const DATA = {
       },
       {
         titulo: "Relatoria em disputa",
-        descricao: "A escolha do relator definirá ritmo e profundidade das mudanças. Oposição prefere Pacheco; Aziz é apontado como favorito; nada oficializado até 11/06.",
+        descricao: "Pacheco descartou a relatoria em 17/06 (‘não serei o relator dessa matéria’); governo aposta em Camilo Santana (PT-CE), mas Alcolumbre tende a preferir Omar Aziz (PSD-AM) como opção ‘ganha-ganha’. PEC completa 20 dias sem despacho à CCJ.",
         quem: "Davi Alcolumbre (União-AP) decide",
       },
       {
@@ -185,6 +185,14 @@ const DATA = {
 
   /* ===== painel de notícias ===== */
   noticias: [
+    {
+      titulo: "Pacheco descarta ser relator da PEC 6x1; Aziz e Camilo Santana ficam como favoritos",
+      fonte: "CNN Brasil · Correio Braziliense · Congresso em Foco",
+      data: "17/06/2026",
+      url: "https://www.correiobraziliense.com.br/politica/2026/06/7442995-pacheco-descarta-relatar-pec-do-fim-da-escala-6x1-no-senado.html",
+      resumo: "O ex-presidente do Senado Rodrigo Pacheco (PSB-MG) declarou nesta quarta que não aceitará a relatoria da PEC 221/2019 na CCJ: ‘Eu não estou nesse rol dos que pediram a relatoria. Eu não serei o relator dessa matéria.’ Pacheco era o favorito de Alcolumbre — que o convidou pessoalmente — e ganhou apoio da oposição para a função. Com a recusa, o governo aposta em Camilo Santana (PT-CE) e Alcolumbre tende a preferir Omar Aziz (PSD-AM), apontado como aposta ‘ganha-ganha’. A PEC completa 20 dias no Senado sem despacho à CCJ e sem calendário definido.",
+      categoria: "Tramitação",
+    },
     {
       titulo: "Acordo Lula-Motta: governo retira urgência do PL 1838 e desobstrui a Câmara",
       fonte: "Metrópoles · Agência Brasil · JOTA · Brasil 247",
@@ -271,14 +279,6 @@ const DATA = {
       data: "10/06/2026",
       url: "https://www.poder360.com.br/poder-congresso/senado-barra-retirada-de-apoio-a-pec-alternativa-ao-fim-da-6-x-1/",
       resumo: "Regimento interno impede retirada de assinaturas após publicação da PEC. Romário e Zequinha permanecem formalmente como signatários da PEC 12/2026, apesar de declararem apoio ao fim da 6x1.",
-      categoria: "Tramitação",
-    },
-    {
-      titulo: "Rodrigo Pacheco ganha apoio da oposição para relatar PEC da 6x1",
-      fonte: "CNN Brasil",
-      data: "10/06/2026",
-      url: "https://www.cnnbrasil.com.br/politica/rodrigo-pacheco-ganha-apoio-da-oposicao-para-relatar-pec-da-6x1/",
-      resumo: "PL e oposição transmitiram a Alcolumbre preferência por Pacheco; Gazeta do Povo apura que ele tende a recusar. Omar Aziz também é cotado.",
       categoria: "Tramitação",
     },
   ],
@@ -446,6 +446,13 @@ const DATA = {
         citacao: "Em reunião de líderes na tarde de terça, o governo abriu mão da urgência constitucional do PL 1.838 — o principal instrumento de pressão imediata sobre o Senado — para garantir que Motta bloqueie as 'pautas-bomba' enviadas pela Câmara Alta (impacto de até R$ 215 bi). Lindbergh (PT-RJ): 'erro grave'. Com a alavanca esvaziada, Alcolumbre ganha mais fôlego para administrar o ritmo da PEC sem custo imediato. PEC 221 segue sem despacho à CCJ; relator não definido; Lula retorna do G7 em 18/06.",
         fonte: "Metrópoles · Agência Brasil · JOTA",
         url: "https://www.metropoles.com/brasil/acordo-com-motta-lula-retira-urgencia-da-6x1-para-conter-pautas-bomba",
+      },
+      {
+        data: "17/06",
+        titulo: "Pacheco descarta a relatoria: plano de Alcolumbre perde seu candidato-ponte",
+        citacao: "Pacheco — que Alcolumbre queria usar como 'moeda' de reaproximação com o Planalto — afirma: 'Eu não estou nesse rol dos que pediram a relatoria. Eu não serei o relator dessa matéria.' A estratégia de oferecer Pacheco como sinal de boa vontade ao governo cai por terra. PEC completa 20 dias no Senado sem despacho à CCJ; Omar Aziz e Camilo Santana emergem como favoritos à relatoria.",
+        fonte: "CNN Brasil · Correio Braziliense · Congresso em Foco",
+        url: "https://www.correiobraziliense.com.br/politica/2026/06/7442995-pacheco-descarta-relatar-pec-do-fim-da-escala-6x1-no-senado.html",
       },
     ],
     incentivos: [
