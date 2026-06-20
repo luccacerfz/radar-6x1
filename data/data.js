@@ -5,7 +5,7 @@
    ============================================================ */
 
 const DATA = {
-  atualizadoEm: "2026-06-18",
+  atualizadoEm: "2026-06-20",
   totalFontes: "60+",
 
   /* ===== ficha da proposta ===== */
@@ -186,6 +186,14 @@ const DATA = {
   /* ===== painel de notícias ===== */
   noticias: [
     {
+      titulo: "Audiência pública no Senado confirmada para 01/07; centrais convocam Dia Nacional de Mobilização para 30/06",
+      fonte: "Agência Senado · Esquerda Online",
+      data: "17-18/06/2026",
+      url: "https://www12.senado.leg.br/noticias/materias/2026/06/17/prefeitos-participarao-de-debate-no-senado-sobre-fim-da-escala-6x1",
+      resumo: "Alcolumbre confirmou sessão temática de debate para 1º de julho, com participação da Frente Nacional de Prefeitos (FNP) — que entregou estudo apontando ~R$ 35 bi em impactos para os municípios e pede 4 anos de transição. Em paralelo, as centrais sindicais decretaram 30 de junho como 'Dia Nacional de Mobilização' pelo fim da 6x1 sem corte salarial, com atos em todo o Brasil. As datas anteriormente cogitadas de 24/06 consolidaram-se neste calendário: rua em 30/06, Senado em 01/07.",
+      categoria: "Mobilização",
+    },
+    {
       titulo: "Pacheco descarta ser relator da PEC 6x1; Aziz e Camilo Santana ficam como favoritos",
       fonte: "CNN Brasil · Correio Braziliense · Congresso em Foco",
       data: "17/06/2026",
@@ -271,14 +279,6 @@ const DATA = {
       data: "12/06/2026",
       url: "https://www.cnnbrasil.com.br/politica/senado-avanca-com-pautas-bomba-enquanto-6x1-segue-com-calendario-indefinido/",
       resumo: "Semana de esforço concentrado (8-12/06) encerrou sem Alcolumbre despachar a PEC à CCJ; TV Senado indica que calendário de análise será definido na semana de 15/06.",
-      categoria: "Tramitação",
-    },
-    {
-      titulo: "Senado nega pedidos de Romário e Zequinha Marinho para retirar assinaturas da PEC alternativa",
-      fonte: "Poder360 · Metrópoles",
-      data: "10/06/2026",
-      url: "https://www.poder360.com.br/poder-congresso/senado-barra-retirada-de-apoio-a-pec-alternativa-ao-fim-da-6-x-1/",
-      resumo: "Regimento interno impede retirada de assinaturas após publicação da PEC. Romário e Zequinha permanecem formalmente como signatários da PEC 12/2026, apesar de declararem apoio ao fim da 6x1.",
       categoria: "Tramitação",
     },
   ],
@@ -454,6 +454,13 @@ const DATA = {
         fonte: "CNN Brasil · Correio Braziliense · Congresso em Foco",
         url: "https://www.correiobraziliense.com.br/politica/2026/06/7442995-pacheco-descarta-relatar-pec-do-fim-da-escala-6x1-no-senado.html",
       },
+      {
+        data: "17-18/06",
+        titulo: "Calendário de pressão definido: 30/06 = mobilização nacional, 01/07 = audiência pública no Senado",
+        citacao: "Prefeito Sebastião Melo (Porto Alegre) entregou a Alcolumbre estudo da FNP com impactos de ~R$ 35 bi nos municípios e obteve confirmação de espaço no debate temático de 1º/07. Centrais sindicais (CUT e outras) decretaram 30/06 como 'Dia Nacional de Mobilização' com atos em todo o Brasil. As datas de 24/06 anteriormente cogitadas consolidam-se neste cronograma: rua em 30/06, Senado em 01/07.",
+        fonte: "Agência Senado · Esquerda Online",
+        url: "https://www12.senado.leg.br/noticias/materias/2026/06/17/prefeitos-participarao-de-debate-no-senado-sobre-fim-da-escala-6x1",
+      },
     ],
     incentivos: [
       {
@@ -470,7 +477,7 @@ const DATA = {
       },
       {
         titulo: "Custo de ser o “coveiro”",
-        descricao: "Pauta com ~70% de apoio popular, atos marcados (24/06) e pressão das centrais nos estados. Esmagar a PEC cobraria preço no Amapá, onde seu grupo apoia Lula.",
+        descricao: "Pauta com ~70% de apoio popular, mobilização nacional em 30/06, audiência pública no Senado em 01/07 e pressão das centrais nos estados. Esmagar a PEC cobraria preço no Amapá, onde seu grupo apoia Lula.",
       },
       {
         titulo: "Precedente de engavetamento",

@@ -2317,6 +2317,17 @@
       },
       "evento": "Pacheco descarta relatoria da PEC 6x1; Aziz e Camilo Santana emergem como favoritos — PEC completa 20 dias sem despacho à CCJ",
       "retroativo": false
+    },
+    {
+      "t": "2026-06-20T09:00:00-03:00",
+      "indice": 69,
+      "componentes": {
+        "noticias": 90,
+        "populacao": 65,
+        "senado": 55
+      },
+      "evento": "Audiência pública no Senado confirmada para 01/07 (com prefeitos/FNP); centrais sindicais convocam Dia Nacional de Mobilização para 30/06",
+      "retroativo": false
     }
   ]
 }
