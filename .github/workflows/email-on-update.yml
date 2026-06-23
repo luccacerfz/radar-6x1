@@ -9,12 +9,13 @@ on:
     branches: [main]
     paths:
       - "data/**"
+  workflow_dispatch: {}   # botão "Run workflow" na aba Actions, para teste manual
 
 jobs:
   notificar:
     runs-on: ubuntu-latest
-    # só dispara em commits de mudança real (convenção do projeto)
-    if: contains(github.event.head_commit.message, '[ALERTA]')
+    # push: só em commit de mudança real ([ALERTA]). Execução manual: sempre envia (teste).
+    if: github.event_name == 'workflow_dispatch' || contains(github.event.head_commit.message, '[ALERTA]')
 
     env:
       DESTINATARIO: cltabet@gmail.com
