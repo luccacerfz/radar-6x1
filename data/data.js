@@ -5,7 +5,7 @@
    ============================================================ */
 
 const DATA = {
-  atualizadoEm: "2026-06-20",
+  atualizadoEm: "2026-06-24",
   totalFontes: "60+",
 
   /* ===== ficha da proposta ===== */
@@ -186,6 +186,22 @@ const DATA = {
   /* ===== painel de notícias ===== */
   noticias: [
     {
+      titulo: "Atos nacionais pelo fim da 6x1 ocorrem em 11+ cidades antes do 30/06; CNM/CUT realiza lobby presencial no Senado",
+      fonte: "CUT · PROIFES · CNM/CUT",
+      data: "21-24/06/2026",
+      url: "https://www.cut.org.br/noticias/fim-de-semana-de-atos-e-manifestacoes-reforcam-pressao-pelo-fim-da-escala-6x1-22bd",
+      resumo: "Antes do 'Dia Nacional de Mobilização' convocado para 30/06, centrais sindicais realizaram manifestações nos fins de semana de 21-22 e 23-24 de junho em pelo menos 11 cidades: Salvador, Fortaleza, São Luís, Belo Horizonte, Recife, Curitiba, Porto Alegre (mil pessoas no Parque da Redenção), Brasília (Eixão do Lazer), São Paulo, Rio de Janeiro e outras. Em 22/06, a CNM/CUT realizou agenda de pressão presencial no Senado, percorrendo gabinetes e entregando petição pela redução de jornada. As mobilizações antecipam e reforçam a convocação de 30/06 — maior ação prevista.",
+      categoria: "Mobilização",
+    },
+    {
+      titulo: "Alcolumbre trava despacho à CCJ na semana da Copa e do São João; PEC completa 27 dias sem encaminhamento",
+      fonte: "Agência Brasil · Poder360",
+      data: "22-23/06/2026",
+      url: "https://agenciabrasil.ebc.com.br/politica/noticia/2026-06/alcolumbre-mantem-pec-6x1-travada-em-semana-esvaziada-no-senado",
+      resumo: "Alcolumbre sinalizou a aliados que não encaminharia a PEC 221/2019 à CCJ na semana de 22 de junho, aproveitando o esvaziamento do Congresso por festejos juninos (São João no Nordeste), feriados e Copa do Mundo. A PEC completa 27 dias na Mesa Diretora sem despacho à CCJ e sem relator definido — governo defende Camilo Santana (PT-CE) ou Omar Aziz (PSD-AM), após recusa de Pacheco em 17/06. Próximo marco institucional: sessão temática de 01/07 no Plenário do Senado.",
+      categoria: "Tramitação",
+    },
+    {
       titulo: "Audiência pública no Senado confirmada para 01/07; centrais convocam Dia Nacional de Mobilização para 30/06",
       fonte: "Agência Senado · Esquerda Online",
       data: "17-18/06/2026",
@@ -233,14 +249,7 @@ const DATA = {
       resumo: "Lula embarcou para a Cúpula do G7 em Évian-les-Bains (França) sem se reunir com Alcolumbre — a condição que o presidente do Senado havia imposto para destravar a PEC. Ministro Guimarães tentou a aproximação nos bastidores, mas o encontro não se concretizou antes do embarque. Reunião e despacho à CCJ devem aguardar o retorno de Lula, após 17/06.",
       categoria: "Tramitação",
     },
-    {
-      titulo: "Motta designa Leo Prates relator do PL do governo sobre 6x1; urgência mantida enquanto Senado não vota",
-      fonte: "CNN Brasil · Poder360 · Congresso em Foco",
-      data: "11/06/2026",
-      url: "https://www.cnnbrasil.com.br/politica/hugo-anuncia-leo-prates-como-relator-do-pl-sobre-6x1-enviado-pelo-governo/",
-      resumo: "Hugo Motta designou Leo Prates (Republicanos-BA) — o mesmo relator da PEC na Câmara — para relatar o PL 1.838/2026 enviado pelo Executivo em regime de urgência. Em vez de retirar a urgência, Motta optou por segurar o PL ativo como alavanca de pressão sobre o Senado. O PL trava a pauta da Câmara enquanto a PEC não for votada.",
-      categoria: "Tramitação",
-    },
+
     {
       titulo: "Alcolumbre tenta convencer Pacheco a ser relator da PEC 6x1; Pacheco hesita",
       fonte: "CNN Brasil · Caio Junqueira / Isabel Mega",
@@ -265,14 +274,7 @@ const DATA = {
       resumo: "Após encontro de Alcolumbre com interlocutores do governo sem resultado concreto, ele sinaliza reunião de líderes na semana de 16/06 que pode finalmente definir relator e calendário da PEC na CCJ.",
       categoria: "Tramitação",
     },
-    {
-      titulo: "Motta pede ao governo retirada de urgência do PL da escala 6x1 na Câmara",
-      fonte: "Poder360 · Congresso em Foco",
-      data: "10/06/2026",
-      url: "https://www.poder360.com.br/poder-congresso/motta-diz-que-pediu-ao-governo-para-retirar-urgencia-do-pl-da-6-x-1/",
-      resumo: "Com pauta da Câmara travada pelo PL da 6x1, Motta pediu ao Planalto retirada da urgência, argumentando que a PEC já foi votada. Governo recusou, vendo o trancamento como pressão para aprovação rápida no Senado.",
-      categoria: "Tramitação",
-    },
+
     {
       titulo: "Semana 'decisiva' termina sem despacho e PEC 6x1 segue com calendário indefinido no Senado",
       fonte: "CNN Brasil",
@@ -329,7 +331,7 @@ const DATA = {
       {
         nome: "Disposição a deixar a PEC andar rápido",
         valor: 30,
-        nota: "14 dias sem despachar a PEC à CCJ; cancelou de última hora a reunião com Otto Alencar (09/06); condiciona o avanço a uma reunião sem data com Lula.",
+        nota: "27 dias sem despachar a PEC à CCJ; aproveitou festejos juninos e Copa do Mundo para esvaziar mais uma semana (22/06) sem custo político; condiciona o avanço a uma reunião sem data com Lula.",
       },
       {
         nome: "Chance de votar a favor (texto modificado)",
@@ -343,7 +345,7 @@ const DATA = {
       },
     ],
     leitura: [
-      "<strong>Ritmo:</strong> vai deixar a PEC andar, mas devagar e cobrando pedágio. O despacho à CCJ deve sair em dias (Efraim Filho, líder do seu partido, fala em “esta semana ou a próxima”), mas a votação em plenário antes do recesso de 19/07 — o cronograma do governo — é improvável: ele controla cada checkpoint (despacho, relator, pauta) e já condicionou tudo a uma reunião sem data com Lula. Cenário mais provável: CCJ em julho/agosto e plenário em ritmo que não gera efeitos antes das eleições de outubro — exatamente o resultado preferido por PL e empresariado, sem que ele precise rejeitar nada.",
+      "<strong>Ritmo:</strong> vai deixar a PEC andar, mas devagar e cobrando pedágio. A PEC acumula 27 dias sem despacho à CCJ — aproveitou festejos juninos e Copa do Mundo para esvaziar mais uma semana (22/06) sem custo político. A votação em plenário antes do recesso de 19/07 — o cronograma do governo — é improvável: ele controla cada checkpoint (despacho, relator, pauta) e já condicionou tudo a uma reunião sem data com Lula. Cenário mais provável: CCJ em julho/agosto e plenário em ritmo que não gera efeitos antes das eleições de outubro — exatamente o resultado preferido por PL e empresariado, sem que ele precise rejeitar nada.",
       "<strong>Mérito:</strong> não declarou voto (“vou com a minha consciência e com o meu coração decidir”). A estimativa do Radar é que votaria a favor de uma versão modificada — transição mais longa e salvaguardas para pequenas empresas. E há um detalhe decisivo: texto emendado volta à Câmara, ou seja, “aperfeiçoar” a PEC também é uma forma elegante de atrasá-la.",
       "<strong>O cenário que ele constrói:</strong> um leilão de posição. Para o Planalto, a PEC anda se Lula pagar — agenda direta, prestígio restaurado após a derrota de Messias no STF e apoio à sua reeleição na presidência do Senado em 2027. Para o empresariado e o PL, tempo, audiências e um texto desidratado. Para o público, o discurso institucional de que “o Senado não carimba”. O movimento-síntese: condicionar uma PEC aprovada com 472 votos na Câmara a uma reunião privada com o Presidente da República — o objeto da negociação não é a jornada de trabalho, é a relação de poder.",
     ],
@@ -460,6 +462,13 @@ const DATA = {
         citacao: "Prefeito Sebastião Melo (Porto Alegre) entregou a Alcolumbre estudo da FNP com impactos de ~R$ 35 bi nos municípios e obteve confirmação de espaço no debate temático de 1º/07. Centrais sindicais (CUT e outras) decretaram 30/06 como 'Dia Nacional de Mobilização' com atos em todo o Brasil. As datas de 24/06 anteriormente cogitadas consolidam-se neste cronograma: rua em 30/06, Senado em 01/07.",
         fonte: "Agência Senado · Esquerda Online",
         url: "https://www12.senado.leg.br/noticias/materias/2026/06/17/prefeitos-participarao-de-debate-no-senado-sobre-fim-da-escala-6x1",
+      },
+      {
+        data: "22-24/06",
+        titulo: "Trava o despacho na semana da Copa e do São João; PEC completa 27 dias sem encaminhamento à CCJ",
+        citacao: "Interlocutores confirmam: Alcolumbre sinalizou não enviar a PEC à CCJ na semana de 22/06, aproveitando esvaziamento do Congresso por festejos juninos (São João no Nordeste) e Copa do Mundo. Em paralelo, mobilizações nacionais antecipadas ocorreram em 11+ cidades (21-24/06) e a CNM/CUT realizou lobby presencial no Senado percorrendo gabinetes. A PEC segue na Mesa Diretora; relator indefinido; sessão temática de 01/07 é o próximo marco.",
+        fonte: "Agência Brasil · Poder360 · CUT",
+        url: "https://agenciabrasil.ebc.com.br/politica/noticia/2026-06/alcolumbre-mantem-pec-6x1-travada-em-semana-esvaziada-no-senado",
       },
     ],
     incentivos: [
