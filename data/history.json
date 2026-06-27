@@ -2339,6 +2339,17 @@
       },
       "evento": "Mobilizações nacionais antecipadas em 11+ cidades (21-24/06); Alcolumbre trava despacho aproveitando Copa e São João — PEC completa 27 dias sem encaminhamento à CCJ",
       "retroativo": false
+    },
+    {
+      "t": "2026-06-27T06:00:00-03:00",
+      "indice": 69,
+      "componentes": {
+        "noticias": 90,
+        "populacao": 65,
+        "senado": 55
+      },
+      "evento": "Wagner deixa liderança do governo no Senado (PF/Banco Master); Lula nomeia Teresa Leitão; Alcolumbre marca reunião com autores da PEC para 01/07 — sinaliza envio à CCJ",
+      "retroativo": false
     }
   ]
 }

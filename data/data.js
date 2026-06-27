@@ -5,7 +5,7 @@
    ============================================================ */
 
 const DATA = {
-  atualizadoEm: "2026-06-24",
+  atualizadoEm: "2026-06-27",
   totalFontes: "60+",
 
   /* ===== ficha da proposta ===== */
@@ -61,7 +61,7 @@ const DATA = {
     { nome: "Davi Alcolumbre", partido: "União Brasil", uf: "AP", propensao: "Indeciso/Sem posição", vies: "Presidente do Senado, fisiológico; trava o ritmo sem declarar posição de mérito", fonte: "Declaração pública (só sobre o rito)", fonteUrl: "https://www12.senado.leg.br/noticias/materias/2026/06/02/pec-da-escala-6x1-nao-ira-diretamente-para-o-plenario-do-senado-diz-davi" },
     { nome: "Lucas Barreto", partido: "PSD", uf: "AP", propensao: "Provavelmente contrário", vies: "Centrão, aliado de Alcolumbre", fonte: "Assinou a PEC 12/2026", fonteUrl: "https://www.congressoemfoco.com.br/noticia/119260/40-senadores-assinam-pec-alternativa-ao-fim-da-escala-6x1-veja-lista" },
     { nome: "Randolfe Rodrigues", partido: "PT", uf: "AP", propensao: "Favorável", vies: "Esquerda, líder governista; quer aplicação imediata da redução", fonte: "Declaração pública", fonteUrl: "https://istoe.com.br/pec-jornada-de-trabalho-randolfe-quer-fim-do-6x1-imediato-no-senado" },
-    { nome: "Jaques Wagner", partido: "PT", uf: "BA", propensao: "Favorável", vies: "Esquerda, líder do governo no Senado", fonte: "Declaração pública", fonteUrl: "https://ptnosenado.org.br/fazendo-historia-camara-aprova-fim-da-escala-6x1-e-bancada-petista-vai-trabalhar-por-conclusao-rapida-no-senado/" },
+    { nome: "Jaques Wagner", partido: "PT", uf: "BA", propensao: "Favorável", vies: "Esquerda; ex-líder do governo no Senado (deixou o cargo em 24/06 após operação da PF no caso Banco Master)", fonte: "Declaração pública", fonteUrl: "https://www.cnnbrasil.com.br/politica/jaques-wagner-confirma-saida-de-lideranca-do-governo-no-senado/" },
     { nome: "Otto Alencar", partido: "PSD", uf: "BA", propensao: "Provavelmente favorável", vies: "Governista, presidente da CCJ; tentou retirar assinatura da PEC alternativa", fonte: "Declaração pública", fonteUrl: "https://www.cnnbrasil.com.br/politica/com-tres-propostas-em-jogo-senado-decidira-rumo-do-fim-da-escala-6x1/" },
     { nome: "Angelo Coronel", partido: "Republicanos", uf: "BA", propensao: "Provavelmente contrário", vies: "Centro-direita fisiológico, empresário", fonte: "Assinou a PEC 12/2026", fonteUrl: "https://www.congressoemfoco.com.br/noticia/119260/40-senadores-assinam-pec-alternativa-ao-fim-da-escala-6x1-veja-lista" },
     { nome: "Camilo Santana", partido: "PT", uf: "CE", propensao: "Favorável", vies: "Esquerda governista, ex-ministro da Educação", fonte: "Bancada do PT", fonteUrl: "https://ptnosenado.org.br/fazendo-historia-camara-aprova-fim-da-escala-6x1-e-bancada-petista-vai-trabalhar-por-conclusao-rapida-no-senado/" },
@@ -96,7 +96,7 @@ const DATA = {
     { nome: "Veneziano Vital do Rêgo", partido: "MDB", uf: "PB", propensao: "Provavelmente favorável", vies: "Ala centro-esquerda do MDB, governista", fonte: "Inferido (alinhamento governista)" },
     { nome: "Fernando Dueire", partido: "PSD", uf: "PE", propensao: "Indeciso/Sem posição", vies: "Centro fisiológico", fonte: "Inferido (sem declaração)" },
     { nome: "Humberto Costa", partido: "PT", uf: "PE", propensao: "Favorável", vies: "Esquerda governista — “estrondosa vitória”; quer votar antes do recesso", fonte: "Declaração pública", fonteUrl: "https://www12.senado.leg.br/noticias/materias/2026/05/28/apos-aprovacao-na-camara-senado-analisara-fim-da-escala-6x1" },
-    { nome: "Teresa Leitão", partido: "PT", uf: "PE", propensao: "Favorável", vies: "Esquerda sindical, professora", fonte: "Bancada do PT", fonteUrl: "https://ptnosenado.org.br/fazendo-historia-camara-aprova-fim-da-escala-6x1-e-bancada-petista-vai-trabalhar-por-conclusao-rapida-no-senado/" },
+    { nome: "Teresa Leitão", partido: "PT", uf: "PE", propensao: "Favorável", vies: "Esquerda sindical, professora; nova líder do governo no Senado (desde 25/06) — missão de Lula: articular aprovação da 6x1 e PEC da Segurança", fonte: "Nomeação de Lula (25/06/2026)", fonteUrl: "https://www.cnnbrasil.com.br/politica/lula-escolhe-teresa-leitao-como-nova-lider-do-governo-no-senado/" },
     { nome: "Ciro Nogueira", partido: "PP", uf: "PI", propensao: "Provavelmente contrário", vies: "Direita fisiológica, presidente do PP, líder do Centrão", fonte: "Assinou a PEC 12/2026", fonteUrl: "https://www.congressoemfoco.com.br/noticia/119260/40-senadores-assinam-pec-alternativa-ao-fim-da-escala-6x1-veja-lista" },
     { nome: "Jussara Lima", partido: "PSD", uf: "PI", propensao: "Indeciso/Sem posição", vies: "Centro, suplente em exercício ligada ao campo governista do Piauí", fonte: "Inferido (sem declaração)" },
     { nome: "Marcelo Castro", partido: "MDB", uf: "PI", propensao: "Provavelmente favorável", vies: "Centro governista", fonte: "Inferido (alinhamento governista)" },
@@ -186,6 +186,22 @@ const DATA = {
   /* ===== painel de notícias ===== */
   noticias: [
     {
+      titulo: "Alcolumbre marca reunião com autores da PEC da 6x1 para 01/07 e sinaliza envio à CCJ",
+      fonte: "CNN Brasil · Poder360 · Metrópoles · CartaCapital",
+      data: "25-26/06/2026",
+      url: "https://www.poder360.com.br/poder-congresso/alcolumbre-marca-reuniao-no-senado-para-destravar-pec-da-escala-6-x-1/",
+      resumo: "O presidente do Senado agendou para 1º de julho, às 8h, na Residência Oficial, encontro com a deputada Erika Hilton (PSOL-SP), o deputado Reginaldo Lopes (PT-MG), a nova líder do governo no Senado Teresa Leitão (PT-PE) e Rick Azevedo (criador do Movimento VAT). Interlocutores descrevem o encontro como a 'primeira sinalização de que a PEC deve ser encaminhada à CCJ nos próximos dias'. O encontro precede a sessão temática plenária das 10h do mesmo dia. A PEC completa 31 dias na Mesa Diretora sem despacho.",
+      categoria: "Tramitação",
+    },
+    {
+      titulo: "Lula nomeia Teresa Leitão líder do governo no Senado após saída de Jaques Wagner, alvo da PF no caso Banco Master",
+      fonte: "CNN Brasil · Brasil de Fato · Poder360",
+      data: "24-25/06/2026",
+      url: "https://www.cnnbrasil.com.br/politica/lula-escolhe-teresa-leitao-como-nova-lider-do-governo-no-senado/",
+      resumo: "Jaques Wagner (PT-BA) deixou a liderança do governo no Senado em 24/06, após ser alvo da 9ª fase da Operação Compliance Zero da PF no caso Banco Master. Lula anunciou em 25/06 Teresa Leitão (PT-PE) para substituí-lo — primeira mulher no cargo —, com missão de articular o fim da 6x1 e a PEC da Segurança. Wagner mantém seu voto favorável à PEC, mas a troca de articulador em momento crítico reordena a estratégia do governo no Senado.",
+      categoria: "Tramitação",
+    },
+    {
       titulo: "Atos nacionais pelo fim da 6x1 ocorrem em 11+ cidades antes do 30/06; CNM/CUT realiza lobby presencial no Senado",
       fonte: "CUT · PROIFES · CNM/CUT",
       data: "21-24/06/2026",
@@ -266,23 +282,6 @@ const DATA = {
       resumo: "Com a PEC 12/2026 fragilizada por deserções, a oposição avalia apresentar emendas ao texto da Câmara como nova estratégia. Em paralelo, centrais sindicais convocam sessão temática no plenário do Senado para 24 de junho.",
       categoria: "Tramitação",
     },
-    {
-      titulo: "Reunião de líderes prevista para terça-feira (16/06) pode definir relator da PEC 6x1",
-      fonte: "Correio Braziliense · Metrópoles",
-      data: "13/06/2026",
-      url: "https://www.correiobraziliense.com.br/politica/2026/06/7436233-reuniao-de-lideres-prevista-para-terca-pode-definir-relator-da-pec-6x1.html",
-      resumo: "Após encontro de Alcolumbre com interlocutores do governo sem resultado concreto, ele sinaliza reunião de líderes na semana de 16/06 que pode finalmente definir relator e calendário da PEC na CCJ.",
-      categoria: "Tramitação",
-    },
-
-    {
-      titulo: "Semana 'decisiva' termina sem despacho e PEC 6x1 segue com calendário indefinido no Senado",
-      fonte: "CNN Brasil",
-      data: "12/06/2026",
-      url: "https://www.cnnbrasil.com.br/politica/senado-avanca-com-pautas-bomba-enquanto-6x1-segue-com-calendario-indefinido/",
-      resumo: "Semana de esforço concentrado (8-12/06) encerrou sem Alcolumbre despachar a PEC à CCJ; TV Senado indica que calendário de análise será definido na semana de 15/06.",
-      categoria: "Tramitação",
-    },
   ],
 
   /* ===== pesquisas de opinião ===== */
@@ -331,7 +330,7 @@ const DATA = {
       {
         nome: "Disposição a deixar a PEC andar rápido",
         valor: 30,
-        nota: "27 dias sem despachar a PEC à CCJ; aproveitou festejos juninos e Copa do Mundo para esvaziar mais uma semana (22/06) sem custo político; condiciona o avanço a uma reunião sem data com Lula.",
+        nota: "31 dias sem despachar a PEC à CCJ; aproveitou festejos juninos e Copa do Mundo para esvaziar mais uma semana (22/06) sem custo político. Em 25-26/06 agendou reunião com autores da PEC para 01/07 (8h) — primeiro sinal concreto de movimento, mas ainda sem despacho formal.",
       },
       {
         nome: "Chance de votar a favor (texto modificado)",
@@ -345,7 +344,7 @@ const DATA = {
       },
     ],
     leitura: [
-      "<strong>Ritmo:</strong> vai deixar a PEC andar, mas devagar e cobrando pedágio. A PEC acumula 27 dias sem despacho à CCJ — aproveitou festejos juninos e Copa do Mundo para esvaziar mais uma semana (22/06) sem custo político. A votação em plenário antes do recesso de 19/07 — o cronograma do governo — é improvável: ele controla cada checkpoint (despacho, relator, pauta) e já condicionou tudo a uma reunião sem data com Lula. Cenário mais provável: CCJ em julho/agosto e plenário em ritmo que não gera efeitos antes das eleições de outubro — exatamente o resultado preferido por PL e empresariado, sem que ele precise rejeitar nada.",
+      "<strong>Ritmo:</strong> vai deixar a PEC andar, mas devagar e cobrando pedágio. A PEC acumula 31 dias sem despacho à CCJ — aproveitou festejos juninos e Copa do Mundo para esvaziar mais uma semana (22/06) sem custo político. Em 25-26/06 agendou reunião com os autores da PEC (Teresa Leitão, Erika Hilton, Reginaldo Lopes e Rick Azevedo) para 1º/07 às 8h — primeiro sinal concreto de movimento, mas sem despacho formal até lá. A votação em plenário antes do recesso de 19/07 — o cronograma do governo — permanece improvável: ele controla cada checkpoint (despacho, relator, pauta) e a reunião direta com Lula ainda não aconteceu. Cenário mais provável: CCJ em julho/agosto e plenário em ritmo que não gera efeitos antes das eleições de outubro.",
       "<strong>Mérito:</strong> não declarou voto (“vou com a minha consciência e com o meu coração decidir”). A estimativa do Radar é que votaria a favor de uma versão modificada — transição mais longa e salvaguardas para pequenas empresas. E há um detalhe decisivo: texto emendado volta à Câmara, ou seja, “aperfeiçoar” a PEC também é uma forma elegante de atrasá-la.",
       "<strong>O cenário que ele constrói:</strong> um leilão de posição. Para o Planalto, a PEC anda se Lula pagar — agenda direta, prestígio restaurado após a derrota de Messias no STF e apoio à sua reeleição na presidência do Senado em 2027. Para o empresariado e o PL, tempo, audiências e um texto desidratado. Para o público, o discurso institucional de que “o Senado não carimba”. O movimento-síntese: condicionar uma PEC aprovada com 472 votos na Câmara a uma reunião privada com o Presidente da República — o objeto da negociação não é a jornada de trabalho, é a relação de poder.",
     ],
@@ -469,6 +468,13 @@ const DATA = {
         citacao: "Interlocutores confirmam: Alcolumbre sinalizou não enviar a PEC à CCJ na semana de 22/06, aproveitando esvaziamento do Congresso por festejos juninos (São João no Nordeste) e Copa do Mundo. Em paralelo, mobilizações nacionais antecipadas ocorreram em 11+ cidades (21-24/06) e a CNM/CUT realizou lobby presencial no Senado percorrendo gabinetes. A PEC segue na Mesa Diretora; relator indefinido; sessão temática de 01/07 é o próximo marco.",
         fonte: "Agência Brasil · Poder360 · CUT",
         url: "https://agenciabrasil.ebc.com.br/politica/noticia/2026-06/alcolumbre-mantem-pec-6x1-travada-em-semana-esvaziada-no-senado",
+      },
+      {
+        data: "25-27/06",
+        titulo: "Marca reunião com autores da PEC para 01/07 — primeira sinalização de encaminhamento à CCJ",
+        citacao: "Agenda encontro para 8h do dia 1º/07 na Residência Oficial com Teresa Leitão (nova líder do governo), Erika Hilton, Reginaldo Lopes e Rick Azevedo — definido por interlocutores como 'a primeira sinalização de que a PEC deve ser encaminhada à CCJ nos próximos dias'. A reunião direta com Lula ainda não aconteceu. PEC completa 31 dias sem despacho formal.",
+        fonte: "CNN Brasil · Poder360 · CartaCapital · Metrópoles",
+        url: "https://www.poder360.com.br/poder-congresso/alcolumbre-marca-reuniao-no-senado-para-destravar-pec-da-escala-6-x-1/",
       },
     ],
     incentivos: [
